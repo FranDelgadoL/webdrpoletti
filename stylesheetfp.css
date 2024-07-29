@@ -1,0 +1,709 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Philosopher';
+    src: url('webfabipoletti/Philosopher-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: 'Philosopher', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.sections-stack .content.flags {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding: 0;
+    background-color: #06026b;
+    max-width: 100%;
+}
+
+.sections-stack .content.flags a img {
+    width: 40px;
+    transition: transform 0.3s ease;
+}
+
+.sections-stack .content.flags a img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .sections-stack .content.flags {
+        gap: 20px;
+    }
+}
+
+.inst-icon {
+    text-align: center;
+    font-size: 35px;
+    color: #7d6702;
+    padding: 0;
+}
+
+.inst-icon ul {
+    padding: 2px;
+    margin: 0;
+}
+
+.inst-icon ul li {
+    display: inline-block;
+}
+
+.content-initial {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin: 0;
+    background-color: #fafbfc;
+}
+
+.initial {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1100%;
+    width: 100%;
+}
+
+.content-initial h3 {
+    font-size: 32px;
+    color: #005b96;
+    margin: 0;
+    text-align: center;
+}
+
+.content-initial p {
+    font-size: 22px;
+    color: #666;
+    margin: 0;
+    text-align: center;
+}
+
+.content-initial a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+h6 {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.midpage-header {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.midpage-header h3 {
+    color: #005b96;
+}
+
+.first-part {
+    margin-right: 10px;
+}
+
+.second-part {
+    display: inline-block;
+    padding-left: 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #0056b3;
+    margin: 1px;
+}
+
+.nav-principal {
+    background-color: #007bff;
+}
+
+.nav-bar {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-bar ul li {
+    margin-right: 20px;
+}
+
+.nav-bar ul li:last-child {
+    margin-right: 0;
+}
+
+.nav-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+    background-color: #0056b3;
+}
+
+.midpage-container h3 {
+    font-size: 36px;
+}
+
+@media (max-width: 768px) {
+    .initial {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phoneline {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+    text-align: center;
+}
+
+.nav-menu li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu > li {
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu > li {
+        display: block;
+        margin: 0;
+    }
+
+    .nav-menu > li a {
+        padding: 0;
+    }
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 0;
+    display: block;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 20px;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .nav-menu > li {
+        display: inline-block;
+        width: 33.33%;
+        text-align: center;
+    }
+
+    .nav-menu > li:nth-child(n+4) {
+        width: 50%;
+        text-align: center;
+    }
+
+    .nav-menu > li a {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        padding: 0;
+    }
+
+    .nav-container {
+        padding: 0;
+    }
+}
+
+.nav-item.dropdown {
+    cursor: pointer;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.nav-item:hover, .nav-active {
+    color: #ffdd57;
+}
+
+.logo-clear {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #007bff;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul li {
+    display: block;
+    padding: 5px 0;
+}
+
+.slideshow {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.slide img {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .slideshow {
+        height: 70vh;
+    }
+
+    .slide img {
+        height: 60vh;
+        max-height: 60vh;
+    }
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.slides-nav {
+    position: absolute;
+    bottom: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.slides-nav a {
+    pointer-events: auto;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-text {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    color: #f7f016;
+}
+
+.slide-content h1 {
+    margin-bottom: 10px;
+}
+
+.slide-content h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content .nav-item {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content .nav-item:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.section-container {
+    margin-bottom: 30px; /* Espacio entre secciones */
+}
+
+.cases-container {
+    max-width: 1268.8px; /* Ajusta este valor según el diseño deseado */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 20px; /* Añade algo de padding alrededor */
+}
+
+.caseslist {
+    display: flex; /* Usamos flexbox para colocar los elementos uno al lado del otro */
+    justify-content: space-between; /* Espacio equitativo entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.caseslist-cases {
+    background-color: #f4f4f4; /* Color de fondo para la división */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    flex: 1; /* Hace que la división ocupe el espacio disponible */
+    margin-right: 20px; /* Espacio entre la imagen y la sección de cirugías */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos al inicio horizontalmente */
+}
+
+.caseslist-cases .fa-ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding-left: 0; /* Elimina el padding predeterminado de la lista */
+    margin: 0; /* Elimina el margen predeterminado de la lista */
+    width: 100%; /* Asegura que la lista ocupe todo el ancho del contenedor */
+}
+
+.caseslist-cases .fa-ul li {
+    display: flex; /* Usamos flexbox para alinear elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+}
+
+.caseslist-cases .fa-ul li::before {
+    content: "\f101"; /* Código del icono */
+    font-family: "Font Awesome 5 Free"; /* Asegúrate de que estás usando la familia de fuentes correcta */
+    font-weight: 900; /* Font Awesome necesita el peso correcto para algunos iconos */
+    color: #007bff; /* Color del icono */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+.caseslist-cases .fa-ul li a {
+    color: #005b96; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 20px; /* Tamaño de fuente */
+}
+
+.polettiphoto {
+    flex: 1; /* Hace que la división ocupe el espacio disponible */
+    display: flex; /* Usamos flexbox para alinear la imagen */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+
+.polettiphoto img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+@media (max-width: 768px) {
+    .caseslist {
+        flex-direction: column; /* Cambia a disposición en columna en pantallas pequeñas */
+        align-items: center; /* Alinea los elementos al centro en pantallas pequeñas */
+    }
+
+    .caseslist-cases, .polettiphoto {
+        margin-right: 0; /* Elimina el margen en pantallas pequeñas */
+        margin-bottom: 20px; /* Añade margen inferior entre los elementos en columna */
+    }
+
+    .polettiphoto {
+        margin-bottom: 0; /* Elimina el margen inferior del último elemento */
+    }
+}
+
+.two-buttons {
+    display: flex;
+    justify-content: center; /* Centra las columnas horizontalmente */
+    gap: 30px; /* Espacio entre las columnas */
+    max-width: 100%; /* Ancho máximo */
+}
+
+.two-buttons a {
+    background-color: #23297d;
+}
+
+.small-container {
+    width: 100%; /* Ancho completo */
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Alinea el texto centrado */
+    margin-top: 0px; /* Espacio superior */
+}
+
+.small-info {
+    font-size: 20px;
+    color: #666666;
+    margin: 20px 20px 10px;
+}
+
+.maps {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.maps a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #545353; /* Color del texto */
+    font-size: 18px; /* Tamaño de fuente */
+    padding: 20px; /* Añade un espacio interno alrededor de cada enlace */
+}
+
+.maps a i {
+    margin-right: 10px; /* Añade espacio a la derecha del ícono para separación */
+    color: #ba0b0b;
+}
+
+.logo-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100px; /* Ajusta la altura según sea necesario */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background: white;
+}
+
+.logo-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    width: calc(150px * 11); /* Ajusta esto según la cantidad de logos */
+}
+
+.logo-slide {
+    flex: 0 0 auto;
+    width: 150px; /* Ajusta el ancho de cada logo */
+    margin-right: 10px; /* Espacio entre los logos */
+}
+
+.logo-slide img {
+    width: 100%;
+    height: 100px; /* Ajusta la altura según sea necesario */
+    object-fit: contain; /* Mantiene la proporción de la imagen sin distorsionarla */
+    display: block;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-150px * 11)); }
+}
+
+.final-container {
+    display: flex;
+    justify-content: center; /* Centra el contenedor interno horizontalmente */
+    width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el padding dentro del ancho total */
+}
+
+.custom-columns {
+    display: flex;
+    justify-content: center; /* Centra los elementos dentro de custom-columns */
+    align-items: center; /* Centra los elementos verticalmente */
+    max-width: 1200px; /* Establece un ancho máximo para limitar la expansión */
+    width: 100%;
+    gap: 100px; /* Añade espacio entre las columnas */
+    color: #005b96;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .custom-columns {
+        flex-direction: column; /* Cambia a disposición vertical en dispositivos móviles */
+        align-items: center; /* Alinea los elementos a la izquierda */
+        text-align: center; /* Centra el texto en dispositivos móviles */
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-columns {
+        font-size: 16px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+}
+
+.flat-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Animación para el cambio de color */
+}
+
+.paragraph p {
+    margin: 20px; /* Elimina el margen predeterminado del párrafo */
+    padding: 0; /* Elimina el padding predeterminado del párrafo */
+    text-decoration: none; /* Elimina cualquier decoración de enlace */
+    color: #666666; /* Color del texto */
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* Estilos por defecto: oculta los elementos en pantalla grande */
+#mobile-nav-toggle,
+.nav-branding {
+    display: none;
+}
+
+/* Estilos para pantallas pequeñas: muestra los elementos */
+@media (max-width: 768px) {
+    #mobile-nav-toggle,
+    .nav-branding {
+        display: block;
+    }
+}
+
+footer {
+    text-align: center; /* Centra el contenido dentro del footer */
+    margin-top: 0px; /* Espacio superior para separarlo del contenido principal */
+	background-color: #7a7373;
+	padding: 15px 0;
+}
+
+footer p {
+    display: inline-block; /* Coloca el contenido en línea */
+    margin: 0; /* Elimina el margen por defecto de los párrafos dentro del footer */
+	color: #f9fae8;
+				
+}
+
+footer .separator {
+    margin: 0 20px; /* Ajusta el margen a ambos lados del separador */
+}
+
+footer img {
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+    margin-left: 5px; /* Ajusta el margen izquierdo de la imagen */
+}
+
