@@ -293,6 +293,10 @@ a {
     color: #ffdd57;
 }
 
+.nav-item.dropdown.active .dropdown-content {
+    display: block;
+}
+
 .logo-clear {
     display: none;
 }
@@ -423,9 +427,6 @@ a {
     transition: color 0.3s ease;
 }
 
-.dropdown {
-    position: relative;
-}
 
 .dropdown-content {
     display: none;
@@ -433,7 +434,9 @@ a {
     background-color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    min-width: 160px; /* Ajusta según sea necesario */
 }
+
 
 .dropdown-content .nav-item {
     color: black;
@@ -449,9 +452,29 @@ a {
     display: block;
 }
 
-.show {
+.dropdown-content-contact {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content-contact .nav-item {
+    color: black;
+    text-decoration: none;
     display: block;
 }
+
+.dropdown-content-contact .nav-item:hover {
+    background-color: #f1f1f1;
+}
+
+.nav-item.dropdown-contact.active .dropdown-content-contact {
+    display: block;
+}
+
+
 
 .section-container {
     margin-bottom: 30px; /* Espacio entre secciones */
@@ -463,33 +486,40 @@ a {
     padding: 20px; /* Añade algo de padding alrededor */
 }
 
+.section-title {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 28px; /* Ajusta el tamaño de la fuente */
+    color: #005B96; /* Color del texto */
+    margin-bottom: 20px; /* Espacio inferior para separar el título del contenido */
+}
+
+
 .caseslist {
     display: flex; /* Usamos flexbox para colocar los elementos uno al lado del otro */
-    justify-content: space-between; /* Espacio equitativo entre los elementos */
+    justify-content: center; /* Espacio equitativo entre los elementos */
     align-items: center; /* Alinea los elementos verticalmente */
 }
 
 .caseslist-cases {
-    background-color: #f4f4f4; /* Color de fondo para la división */
-    padding: 20px; /* Espaciado interno */
+    padding: 0px; /* Espaciado interno */
     border-radius: 10px; /* Bordes redondeados */
     flex: 1; /* Hace que la división ocupe el espacio disponible */
-    margin-right: 20px; /* Espacio entre la imagen y la sección de cirugías */
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinea los elementos al inicio horizontalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
 }
 
 .caseslist-cases .fa-ul {
     list-style: none; /* Elimina los puntos de la lista */
-    padding-left: 0; /* Elimina el padding predeterminado de la lista */
+    padding-left: 0; /* Ajusta el padding predeterminado de la lista */
     margin: 0; /* Elimina el margen predeterminado de la lista */
     width: 100%; /* Asegura que la lista ocupe todo el ancho del contenedor */
+    text-align: center; /* Centra el texto */
 }
 
 .caseslist-cases .fa-ul li {
     display: flex; /* Usamos flexbox para alinear elementos */
-    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
     margin-bottom: 10px; /* Espaciado entre elementos de la lista */
 }
 
@@ -541,6 +571,7 @@ a {
     justify-content: center; /* Centra las columnas horizontalmente */
     gap: 30px; /* Espacio entre las columnas */
     max-width: 100%; /* Ancho máximo */
+    
 }
 
 .two-buttons a {
@@ -594,7 +625,7 @@ a {
 
 .logo-track {
     display: flex;
-    animation: scroll 20s linear infinite;
+    animation: scroll 50s linear infinite;
     width: calc(150px * 11); /* Ajusta esto según la cantidad de logos */
 }
 
@@ -705,5 +736,9 @@ footer .separator {
 footer img {
     vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
     margin-left: 5px; /* Ajusta el margen izquierdo de la imagen */
+}
+
+html {
+    scroll-behavior: smooth;
 }
 

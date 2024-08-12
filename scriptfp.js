@@ -1,15 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const procedimientos = document.querySelector('.nav-item.parent[href="procedures.html"]');
-    const paciente = document.querySelector('.nav-item.parent[href="patient-info.html"]');
+    // Menú Dropdown
+    const procedimientos = document.querySelector('.nav-item.parent[href="#casos-y-procedimientos"]');
+    const paciente = document.querySelector('.nav-item.parent[href="#"]');
+    const contacto = document.querySelector('.nav-item.parent-contact');
 
     const procedimientosDropdown = procedimientos ? procedimientos.nextElementSibling : null;
     const pacienteDropdown = paciente ? paciente.nextElementSibling : null;
+    const contactoDropdown = contacto ? contacto.nextElementSibling : null;
 
     if (procedimientosDropdown) procedimientosDropdown.style.display = 'none';
     if (pacienteDropdown) pacienteDropdown.style.display = 'none';
+    if (contactoDropdown) contactoDropdown.style.display = 'none';
 
     function toggleDropdown(dropdown) {
-        if (dropdown) dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+        if (dropdown) {
+            dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+        }
     }
 
     function hideDropdowns(event) {
@@ -20,13 +26,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if (pacienteDropdown && !pacienteDropdown.contains(target) && !paciente.contains(target)) {
             pacienteDropdown.style.display = 'none';
         }
-    }
-
-    if (procedimientos) {
-        procedimientos.addEventListener('click', function(event) {
-            event.preventDefault();
-            toggleDropdown(procedimientosDropdown);
-        });
+        if (contactoDropdown && !contactoDropdown.contains(target) && !contacto.contains(target)) {
+            contactoDropdown.style.display = 'none';
+        }
     }
 
     if (paciente) {
@@ -36,8 +38,16 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    if (contacto) {
+        contacto.addEventListener('click', function(event) {
+            event.preventDefault();
+            toggleDropdown(contactoDropdown);
+        });
+    }
+
     document.addEventListener('click', hideDropdowns);
 
+    // Slider
     const slides = document.querySelectorAll('.slide');
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
@@ -79,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
     showSlide(currentSlide);
     startSlideShow();
 
+    // Logo Slider
     const logoSlider = document.querySelector('.logo-slider');
     const logoTrack = document.querySelector('.logo-track');
 
@@ -91,7 +102,29 @@ document.addEventListener("DOMContentLoaded", function() {
             logoTrack.style.animationPlayState = 'running';
         });
     }
+
+    // Scroll suave
+    const procedimientosLink = document.querySelector('a[href="#casos-y-procedimientos"]');
+
+    if (procedimientosLink) {
+        procedimientosLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetElement = document.querySelector('#casos-y-procedimientos');
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',  // Scroll suave
+                    block: 'start'       // Posición del elemento en la pantalla después del scroll (inicio de la vista)
+                });
+            }
+        });
+    }
 });
+
+
+
+
+
+
 
 
 
