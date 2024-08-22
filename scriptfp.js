@@ -120,6 +120,25 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+document.querySelectorAll('.lang').forEach(item => {
+    item.addEventListener('click', function(event) {
+        event.preventDefault(); // Previene que el enlace recargue la página
+        const selectedLanguage = this.getAttribute('data-lang');
+        
+        fetch('translations.json')
+            .then(response => response.json())
+            .then(translations => {
+                document.querySelectorAll('[data-key]').forEach(element => {
+                    const key = element.getAttribute('data-key');
+                    if (translations[selectedLanguage] && translations[selectedLanguage][key]) {
+                        element.textContent = translations[selectedLanguage][key];
+                    }
+                });
+            })
+            .catch(error => console.error('Error loading translations:', error));
+    });
+});
+
 
 
 

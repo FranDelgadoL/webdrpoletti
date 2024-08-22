@@ -8,45 +8,38 @@
   <meta name="robots" content="index, follow">
   <meta name="author" content="Fran Delgado, .gas. developers">
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=TU_ID_DE_SEGUIMIENTO"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <link href="https://fonts.googleapis.com/css?family=Philosopher:400,700," rel="stylesheet">
 
-      gtag('config', 'TU_ID_DE_SEGUIMIENTO');
-    </script>
+	<link href="https://fonts.googleapis.com/css?family=Open Sans:300,700," rel="stylesheet">
 
   <title>Dr. Fabián Poletti | Cirujano de Rodilla y Cadera </title>
 
   <link rel="stylesheet" type="text/css" href="stylesheetfp.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <script src="scriptfp.js" defer></script>
   
 </head>
 
-	<link href="https://fonts.googleapis.com/css?family=Philosopher:400,700," rel="stylesheet">
-
-	<link href="https://fonts.googleapis.com/css?family=Open Sans:300,700," rel="stylesheet">
-
 <body>
 
-<section class="sections-stack">
-    <div class="content flags">
-        <a href="español-page-url">
-            <img src="images/españa.png" alt="Español">
-        </a>
-        <a href="english-page-url">
-            <img src="images/ru.png" alt="English">
-        </a>
-        <a href="russian-page-url">
-            <img src="images/rusia.png" alt="Русский">
-        </a>
-        <a href="italian-page-url">
-            <img src="images/italia.png" alt="Italiano">
-        </a>
-    </div>
-</section>
+    <section class="sections-stack">
+        <div class="content flags">
+            <a href="#" class="lang" data-lang="es">
+                <img src="images/españa.png" alt="Español" data-key="spanish-flag">
+            </a>
+            <a href="#" class="lang" data-lang="en">
+                <img src="images/ru.png" alt="English" data-key="english-flag">
+            </a>
+            <a href="#" class="lang" data-lang="ru">
+                <img src="images/rusia.png" alt="Русский" data-key="russian-flag">
+            </a>
+            <a href="#" class="lang" data-lang="it">
+                <img src="images/italia.png" alt="Italiano" data-key="italian-flag">
+            </a>
+        </div>
+    </section>
 
 <div class="inst-icon">
     <ul>
@@ -57,16 +50,19 @@
 <div class="content-initial">
     <div class="initial">
         <div>
-            <p>Medicina deportiva y ortobiología</p>
+            <p data-key="sports-medicine">Medicina deportiva y ortobiología</p>
         </div>
         <div>
-            <h3>DR FABIÁN POLETTI</h3>
+            <h3 data-key="doctor-name">DR FABIÁN POLETTI</h3>
         </div>
         <div>
-            <p>Cirugía de Rodilla y Cadera</p>
+            <p data-key="knee-hip-surgery">Cirugía de Rodilla y Cadera</p>
         </div>
         <div class="phoneline">
-            <h3><i class="fa fa-phone"></i> <a href="tel:0294117700" class="phoneline">+34 952 76 06 00</a></h3>
+            <h3>
+                <i class="fa fa-phone"></i> 
+                <a href="tel:0294117700" class="phoneline" data-key="phone-number">+34 952 76 06 00</a>
+            </h3>
         </div>
     </div>
 </div>
@@ -76,28 +72,23 @@
 <div class="nav-principal">
     <nav class="nav-bar clearfix bg-primary" role="navigation">
         <div class="container nav-container">
-           
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-item nav-active">Inicio</a></li>
-
-                <li><a href="pages/sobre-poletti.html" class="nav-item">Acerca del Dr Poletti</a></li>
-
-                <li><a href="about-fabian-poletti.html" class="nav-item">Acerca del Dr Poletti</a></li>
-
+                <li><a href="index.html" class="nav-item nav-active" data-key="home">Inicio</a></li>
+                <li><a href="pages/sobre-poletti.html" class="nav-item" data-key="about-doctor">Acerca del Dr Poletti</a></li>
                 <li class="nav-item dropdown">
-                    <a href="#casos-y-procedimientos" class="nav-item parent">Procedimientos</a>
+                    <a href="#casos-y-procedimientos" class="nav-item parent" data-key="procedures">Procedimientos</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-item parent">Información del Paciente</a>
+                    <a href="#" class="nav-item parent" data-key="patient-info">Información del Paciente</a>
                     <ul class="dropdown-content">
-                        <li><a href="pages/información-paciente.html" class="nav-item">Primera Visita / Seguro médico</a></li>
+                        <li><a href="pages/información-paciente.html" class="nav-item" data-key="first-visit">Primera Visita / Seguro médico</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown-contact">
-                    <a href="#" class="nav-item parent-contact">Contacto</a>
+                    <a href="#" class="nav-item parent-contact" data-key="contact">Contacto</a>
                     <ul class="dropdown-content-contact">
-                        <li><a href="tel:+34952760600" class="nav-item">Para citas en Hospiten Estepona: +34 952 76 06 00</a></li>
-                        <li><a href="tel:+34956785333" class="nav-item">Para citas en Clínica Humanline, Sotogrande: +34 956 785 333</a></li>
+                        <li><a href="tel:+34952760600" class="nav-item" data-key="hospiten-phone">Para citas en Hospiten Estepona: +34 952 76 06 00</a></li>
+                        <li><a href="tel:+34956785333" class="nav-item" data-key="humanline-phone">Para citas en Clínica Humanline, Sotogrande: +34 956 785 333</a></li>
                     </ul>
                 </li>
             </ul>
@@ -109,115 +100,114 @@
 	
 		<div class="divider"></div>
 
-<div class="slideshow">
-    <ul class="slides-container">
-        <li class="slide">
-            <img class="slide-image" src="images/futbol2.jpg" alt="Imagen de Lesiones Deportivas">
-            <div class="slide-content">
-                <h1>Lesiones Deportivas</h1>
-                <h2>¿Lesionado practicando deporte? </h2>
-                <a href="contact.php#appointment" class="btn">CONTACTE AL DR. POLETTI</a>
-            </div>
-        </li>
-        <li class="slide">
-            <img class="slide-image" src="images/golf2.jpg" alt="Imagen de Lesiones Deportivas">
-            <div class="slide-content">
-                <h1>Artrosis de Rodilla y Cadera </h1>
-                <h2>Modernos y efectivos tratamientos para la artrosis</h2>
-                <a href="contact.php#appointment" class="btn">CONTACTE AL DR. POLETTI</a>
-            </div>
-        </li>
-        <li class="slide">
-            <img src="images/polettioperando1.jpg" alt="Imagen de Poletti Operando">
-            <div class="slide-content">
-                <h1>Reconstrucción de ACL</h1>
-                <h2>El Dr. Poletti es uno de los principales cirujanos reconstructivos de rodilla y cadera de Málaga y Cádiz</h2>
-                <a href="contact.php#appointment" class="btn">CONTACTE AL DR. POLETTI</a>
-            </div>
-        </li>
-        <li class="slide">
-            <img src="images/danza2.jpg" alt="Imagen de Procedimientos Innovadores">
-            <div class="slide-content">
-                <h1>Procedimientos innovadores</h1>
-                <h2>El Dr. Poletti es líder en investigación e innovación en cirugía de rodilla y cadera.</h2>
-                <a href="contact.php#appointment" class="btn">CONTACTE AL DR. POLETTI</a>
-            </div>
-        </li>
-        <li class="slide">
-            <img src="images/FabianPoletti-Traumatólogo2.jpg" alt="Imagen de Fabian Poletti">
-            <div class="slide-content">
-                <h1>Procedimientos innovadores</h1>
-                <h2>El Dr. Poletti es líder en investigación e innovación en cirugía de rodilla y cadera.</h2>
-                <a href="contact.php#appointment" class="btn">CONTACTE AL DR. POLETTI</a>
-            </div>
-        </li>
-    </ul>
+ <div class="slideshow">
+             <ul class="slides-container">
+                <li class="slide">
+                    <img class="slide-image" src="images/futbol2.jpg" alt="Imagen de Lesiones Deportivas">
+                    <div class="slide-content">
+                        <h1 data-key="sports-injuries-title">Lesiones Deportivas</h1>
+                        <h2 data-key="sports-injuries-subtitle">¿Lesionado practicando deporte?</h2>
+                        <a href="contact.php#appointment" class="btn" data-key="contact-btn">CONTACTE AL DR. POLETTI</a>
+                    </div>
+                </li>
+                <li class="slide">
+                    <img class="slide-image" src="images/golf2.jpg" alt="Imagen de Lesiones Deportivas">
+                    <div class="slide-content">
+                        <h1 data-key="knee-hip-osteoarthritis-title">Artrosis de Rodilla y Cadera</h1>
+                        <h2 data-key="knee-hip-osteoarthritis-subtitle">Modernos y efectivos tratamientos para la artrosis</h2>
+                        <a href="contact.php#appointment" class="btn" data-key="contact-btn">CONTACTE AL DR. POLETTI</a>
+                    </div>
+                </li>
+                <li class="slide">
+                    <img src="images/polettioperando1.jpg" alt="Imagen de Poletti Operando">
+                    <div class="slide-content">
+                        <h1 data-key="acl-reconstruction-title">Reconstrucción de ACL</h1>
+                        <h2 data-key="acl-reconstruction-subtitle">El Dr. Poletti es uno de los principales cirujanos reconstructivos de rodilla y cadera de Málaga y Cádiz</h2>
+                        <a href="contact.php#appointment" class="btn" data-key="contact-btn">CONTACTE AL DR. POLETTI</a>
+                    </div>
+                </li>
+                <li class="slide">
+                    <img src="images/danza2.jpg" alt="Imagen de Procedimientos Innovadores">
+                    <div class="slide-content">
+                        <h1 data-key="innovative-procedures-title">Procedimientos innovadores</h1>
+                        <h2 data-key="innovative-procedures-subtitle">El Dr. Poletti es líder en investigación e innovación en cirugía de rodilla y cadera.</h2>
+                        <a href="contact.php#appointment" class="btn" data-key="contact-btn">CONTACTE AL DR. POLETTI</a>
+                    </div>
+                </li>
+                <li class="slide">
+                    <img src="images/FabianPoletti-Traumatólogo2.jpg" alt="Imagen de Fabian Poletti">
+                    <div class="slide-content">
+                        <h1 data-key="innovative-procedures-title">Procedimientos innovadores</h1>
+                        <h2 data-key="innovative-procedures-subtitle">El Dr. Poletti es líder en investigación e innovación en cirugía de rodilla y cadera.</h2>
+                        <a href="contact.php#appointment" class="btn" data-key="contact-btn">CONTACTE AL DR. POLETTI</a>
+                    </div>
+                </li>
+            </ul>
+        
+            <nav class="slides-nav">
+                <a href="#" class="prev" data-key="prev-slide">Prev</a>
+                <a href="#" class="next" data-key="next-slide">Next</a>
+            </nav>
+    </div>
 
-    <nav class="slides-nav">
-        <a href="#" class="prev">Prev</a>
-        <a href="#" class="next">Next</a>
-    </nav>
-</div>
-
-<div class="midpage-container">
+    <div class="midpage-container">
         <div class="midpage-header">
             <div class="text-midpage">
-                <h3>Cirugía de Rodilla y Cadera en Costa del Sol (Marbella, Estepona, Sotogrande, Gibraltar)</h3>
+                <h3 data-key="knee-hip-surgery-header">Cirugía de Rodilla y Cadera en Costa del Sol (Marbella, Estepona, Sotogrande, Gibraltar)</h3>
             </div>
         </div>
-        
-            <div class="paragraph">
-                <p>El Dr. Fabian Poletti es un reputado Cirujano Ortopédico y Traumatólogo especialista en Cirugía de Rodilla y Cadera, 
-					Traumatología Deportiva, Medicina Regenerativa y Ortobiológicos (Plasma Rico en Plaquetas, 
-						Ac. Hialurónico, Células Madre etc).</p>
-            </div>
-            
-        </a>
-</div>
-
-<div class="cases-container">
     
-    <div class="caseslist">
-        <div class="caseslist-cases">
-            <h2 id="casos-y-procedimientos" class="section-title">Casos y Procedimientos</h2>
-            <ul class="fa-ul">
-                <li><a href="pages/medicina-deportiva.html" >Medicina deportiva</a></li>
-                <li><a href="pages/artroscopia-de-rodilla.html">Artroscopía de la rodilla</a></li>
-                <li><a href="pages/reconstrucción-ligamentos-rodilla.html">Reconstrucción de ligamentos de rodilla</a></li>
-                <li><a href="pages/reemplazo-total-rodilla.html">Reemplazo total de rodilla</a></li>
-                <li><a href="pages/reemplazo-rodilla-unicompartimental.html">Reemplazo de rodilla unicompartimental</a></li>
-                <li><a href="pages/desviación-rotula.html">Desviación e inestabilidad de la rótula</a></li>  
-                <li><a href="pages/osteotomia-rodilla.html">Osteotomía de la rodilla</a></li>              
-            </ul>
-        </div>
-        <div class="polettiphoto">
-            <img src="images/FabianPolettiFotoTransparente.png" alt="Dr Fabián Poletti" class="img-fluid">
+        <div class="paragraph">
+            <p data-key="knee-hip-surgery-description">El Dr. Fabian Poletti es un reputado Cirujano Ortopédico y Traumatólogo especialista en Cirugía de Rodilla y Cadera, 
+                Traumatología Deportiva, Medicina Regenerativa y Ortobiológicos (Plasma Rico en Plaquetas, 
+                Ac. Hialurónico, Células Madre etc).</p>
         </div>
     </div>
-</div>
 
-<div class="small-container">
+    <div class="cases-container">
+        <div class="caseslist">
+            <div class="caseslist-cases">
+                <h2 id="casos-y-procedimientos" class="section-title" data-key="cases-procedures-title">Casos y Procedimientos</h2>
+                <ul class="fa-ul">
+                    <li><a href="pages/medicina-deportiva.html" data-key="sports-medicine-link">Medicina deportiva</a></li>
+                    <li><a href="pages/artroscopia-de-rodilla.html" data-key="knee-arthroscopy-link">Artroscopía de la rodilla</a></li>
+                    <li><a href="pages/reconstrucción-ligamentos-rodilla.html" data-key="knee-ligament-reconstruction-link">Reconstrucción de ligamentos de rodilla</a></li>
+                    <li><a href="pages/reemplazo-total-rodilla.html" data-key="total-knee-replacement-link">Reemplazo total de rodilla</a></li>
+                    <li><a href="pages/reemplazo-rodilla-unicompartimental.html" data-key="unicompartmental-knee-replacement-link">Reemplazo de rodilla unicompartimental</a></li>
+                    <li><a href="pages/desviación-rotula.html" data-key="patella-dislocation-link">Desviación e inestabilidad de la rótula</a></li>
+                    <li><a href="pages/osteotomia-rodilla.html" data-key="knee-osteotomy-link">Osteotomía de la rodilla</a></li>
+                </ul>
+            </div>
+            <div class="polettiphoto">
+                <img src="images/FabianPolettiFotoTransparente.png" alt="Dr Fabián Poletti" class="img-fluid" data-key="poletti-photo-alt">
+            </div>
+        </div>
+    </div>
     
-        <p class='small-info'>
+
+    <div class="small-container">
+        <p class='small-info' data-key="contact-info">
             Atiende en Hospiten Estepona - Málaga y en Clínica Humanline, Sotogrande - Cádiz<br><br>
         </p>
-	<div class="maps">	
-		<a href="https://www.google.com/maps/search/?api=1&query=Hospiten+Estepona">
-        <i class="fas fa-map-marker-alt"></i> Ver Hospiten Estepona en el mapa
-		</a>
-		<a href="https://www.google.com/maps/search/?api=1&query=C.C+Sotomarket,+Sotogrande">
-        <i class="fas fa-map-marker-alt"></i> Ver Clínica Humanline en el mapa
-		</a>
-	</div>
-    
-</div>
+        <div class="maps">
+            <a href="https://www.google.com/maps/search/?api=1&query=Hospiten+Estepona" data-key="hospiten-map-link">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i> <span data-key="hospiten-map-text">Ver Hospiten Estepona en el mapa</span>
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=C.C+Sotomarket,+Sotogrande" data-key="clinic-humanline-map-link">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i> <span data-key="clinic-humanline-map-text">Ver Clínica Humanline en el mapa</span>
+            </a>
+        </div>
+    </div>
 
     <div class="two-buttons">
         <div class="flat-button">
-            <a href="pages/mas-sobre-poletti.html" title="About Dr Poletti"><span>Más sobre el Dr. Poletti </span></a>
+            <a href="pages/mas-sobre-poletti.html" title="About Dr Poletti" data-key="about-dr-poletti-link">
+                <span data-key="about-dr-poletti-text">Más sobre el Dr. Poletti</span>
+            </a>
         </div>
         <div class="spacer"></div>
     </div>
+    
 
 <div class="logo-slider">
     <div class="logo-track">
@@ -273,24 +263,23 @@
     <div class="custom-columns">
         <div class="column">
             <p class="text-info lead text-left">
-                <strong><i class="fas fa-phone"></i> &nbsp; <a href="tel:34952760600" class="phoneline white">+34 952 76 06 00</a></strong>
+                <strong><i class="fas fa-phone"></i> &nbsp; <a href="tel:34952760600" class="phoneline white" data-key="phone-number">+34 952 76 06 00</a></strong>
             </p>
             <p class="text-info text-left">
-                <i class="far fa-envelope"></i> &nbsp; <a href="mailto:fabian.poletti@hospiten.com" class="white">fabian.poletti@hospiten.com</a>
+                <i class="far fa-envelope"></i> &nbsp; <a href="mailto:fabian.poletti@hospiten.com" class="white" data-key="email-address">fabian.poletti@hospiten.com</a>
             </p>
         </div>
        
-            <p>
-                <strong>Hospiten Estepona - Carretera N-340, Km. 1063, 29680 <br>
-                Estepona, Málaga</strong><br><br>
-                <strong>Clínica Humanline, Autovía del Mediterráneo, Km. 130, 11310 <br>
-                Sotogrande, Cádiz<strong><br>
-            </p>
-        
+        <p data-key="address">
+            <strong data-key="hospiten-address">Hospiten Estepona - Carretera N-340, Km. 1063, 29680 <br>
+            Estepona, Málaga</strong><br><br>
+            <strong data-key="humanline-address">Clínica Humanline, Autovía del Mediterráneo, Km. 130, 11310 <br>
+            Sotogrande, Cádiz</strong><br>
+        </p>
     </div>
 </div>
 
-<script src="scriptfp.js"></script>
+
 
 <footer>
     <p>&copy; 2024 Dr. Fabián Poletti <span class="separator">|</span> Website design: <a href="https://frandelgadol.github.io/webcv/" target="_blank"><img src="images/gasrecort3.png" alt="Logo de .GAS." height="20"></a></p>
