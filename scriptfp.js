@@ -1,4 +1,6 @@
-document.addEventListener("DOMContentLoaded", function() {
+console.log("scriptfp.js cargado correctamente");
+
+document.addEventListener("DOMContentLoaded", function () {
     // Menú Dropdown
     const procedimientos = document.querySelector('.nav-item.parent[href="#casos-y-procedimientos"]');
     const paciente = document.querySelector('.nav-item.parent[href="#"]');
@@ -32,14 +34,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if (paciente) {
-        paciente.addEventListener('click', function(event) {
+        paciente.addEventListener('click', function (event) {
             event.preventDefault();
             toggleDropdown(pacienteDropdown);
         });
     }
 
     if (contacto) {
-        contacto.addEventListener('click', function(event) {
+        contacto.addEventListener('click', function (event) {
             event.preventDefault();
             toggleDropdown(contactoDropdown);
         });
@@ -71,12 +73,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if (prevButton && nextButton) {
-        prevButton.addEventListener('click', function(event) {
+        prevButton.addEventListener('click', function (event) {
             event.preventDefault();
             prevSlide();
         });
 
-        nextButton.addEventListener('click', function(event) {
+        nextButton.addEventListener('click', function (event) {
             event.preventDefault();
             nextSlide();
         });
@@ -94,11 +96,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const logoTrack = document.querySelector('.logo-track');
 
     if (logoSlider && logoTrack) {
-        logoSlider.addEventListener('mouseover', function() {
+        logoSlider.addEventListener('mouseover', function () {
             logoTrack.style.animationPlayState = 'paused';
         });
 
-        logoSlider.addEventListener('mouseout', function() {
+        logoSlider.addEventListener('mouseout', function () {
             logoTrack.style.animationPlayState = 'running';
         });
     }
@@ -107,45 +109,88 @@ document.addEventListener("DOMContentLoaded", function() {
     const procedimientosLink = document.querySelector('a[href="#casos-y-procedimientos"]');
 
     if (procedimientosLink) {
-        procedimientosLink.addEventListener('click', function(event) {
+        procedimientosLink.addEventListener('click', function (event) {
             event.preventDefault();
             const targetElement = document.querySelector('#casos-y-procedimientos');
             if (targetElement) {
                 targetElement.scrollIntoView({
-                    behavior: 'smooth',  // Scroll suave
-                    block: 'start'       // Posición del elemento en la pantalla después del scroll (inicio de la vista)
+                    behavior: 'smooth', // Scroll suave
+                    block: 'start' // Posición del elemento en la pantalla después del scroll (inicio de la vista)
                 });
             }
         });
     }
-});
 
+// Idioma y traducciones
 document.querySelectorAll('.lang').forEach(item => {
     item.addEventListener('click', function(event) {
         event.preventDefault(); // Previene que el enlace recargue la página
         const selectedLanguage = this.getAttribute('data-lang');
-        
-        fetch('translations.json')
-            .then(response => response.json())
-            .then(translations => {
-                document.querySelectorAll('[data-key]').forEach(element => {
-                    const key = element.getAttribute('data-key');
-                    if (translations[selectedLanguage] && translations[selectedLanguage][key]) {
-                        element.textContent = translations[selectedLanguage][key];
-                    }
-                });
-            })
-            .catch(error => console.error('Error loading translations:', error));
+
+        // Guardar el idioma seleccionado en el localStorage
+        localStorage.setItem('selectedLanguage', selectedLanguage);
+
+        // Cargar las traducciones según el idioma seleccionado
+        loadTranslations(selectedLanguage);
+        loadCasosTranslations(selectedLanguage);
+        updateNavigationLinks(selectedLanguage);
     });
 });
 
+// Cargar las traducciones desde translations.json
+function loadTranslations(language) {
+    fetch('translations.json')
+        .then(response => response.json())
+        .then(translations => {
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translations[language] && translations[language][key]) {
+                    element.textContent = translations[language][key];
+                }
+            });
+        })
+        .catch(error => console.error('Error loading translations:', error));
+}
 
+function loadCasosTranslations(language) {
+    fetch('translationscasos.json')
+        .then(response => response.json())
+        .then(translations => {
+            document.querySelectorAll('[data-key-casos]').forEach(element => {
+                const key = element.getAttribute('data-key-casos');
+                if (translations[language] && translations[language][key]) {
+                    element.textContent = translations[language][key];
+                }
+            });
+        })
+        .catch(error => console.error('Error loading casos translations:', error));
+}
 
+// Verificar el idioma guardado en el localStorage al cargar la página
+document.addEventListener("DOMContentLoaded", function() {
+    const selectedLanguage = localStorage.getItem('selectedLanguage') || 'es'; // Por defecto 'es'
+    loadTranslations(selectedLanguage); // Cargar las traducciones correspondientes
+    loadCasosTranslations(selectedLanguage); // Cargar las traducciones de casos
+    updateNavigationLinks(selectedLanguage); // Asegurarse de que los enlaces estén actualizados
+});
 
+// Enlaces de navegación por idioma
+const linksByLanguage = {
+    es: { about: "pages/sobre-poletti.html" },
+    en: { about: "pages/about-poletti.html" },
+    ru: { about: "pages/o-poletti.html" },
+    it: { about: "pages/su-poletti.html" }
+};
 
-
-
-
-
-
+// Modificar los enlaces de navegación según el idioma seleccionado
+function updateNavigationLinks(language) {
+    document.querySelectorAll('a[data-page]').forEach(link => {
+        const pageKey = link.getAttribute('data-page'); // Asegúrate de que tus enlaces tengan el atributo data-page
+        if (pageKey && linksByLanguage[language] && linksByLanguage[language][pageKey]) {
+            // Actualizar la URL de los enlaces según el idioma
+            link.setAttribute('href', linksByLanguage[language][pageKey]);
+        }
+    });
+}
+});
 
