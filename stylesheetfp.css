@@ -617,7 +617,7 @@ a {
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 100px; /* Ajusta la altura según sea necesario */
+    height: 150px; /* Ajusta la altura según sea necesario */
     margin-top: 30px;
     margin-bottom: 10px;
     background: white;
@@ -626,25 +626,25 @@ a {
 .logo-track {
     display: flex;
     animation: scroll 50s linear infinite;
-    width: calc(150px * 11); /* Ajusta esto según la cantidad de logos */
+    width: calc(210px * 9); /* Ajusta esto según la cantidad de logos */
 }
 
 .logo-slide {
     flex: 0 0 auto;
-    width: 150px; /* Ajusta el ancho de cada logo */
+    width: 200px; /* Ajusta el ancho de cada logo */
     margin-right: 10px; /* Espacio entre los logos */
 }
 
 .logo-slide img {
     width: 100%;
-    height: 100px; /* Ajusta la altura según sea necesario */
+    height: 150px; /* Ajusta la altura según sea necesario */
     object-fit: contain; /* Mantiene la proporción de la imagen sin distorsionarla */
     display: block;
 }
 
 @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-150px * 11)); }
+    100% { transform: translateX(calc(-210px * 9)); }
 }
 
 .final-container {
