@@ -4,15 +4,15 @@ document.addEventListener("DOMContentLoaded", function () {
     // Menú Dropdown
     const procedimientos = document.querySelector('.nav-item.parent[href="#casos-y-procedimientos"]');
     const paciente = document.querySelector('.nav-item.parent[href="#"]');
-    const contacto = document.querySelector('.nav-item.parent-contact');
+    const blog = document.querySelector('.nav-item.parent-blog');  // Ya tienes una clase blog
 
     const procedimientosDropdown = procedimientos ? procedimientos.nextElementSibling : null;
     const pacienteDropdown = paciente ? paciente.nextElementSibling : null;
-    const contactoDropdown = contacto ? contacto.nextElementSibling : null;
+    const blogDropdown = blog ? blog.nextElementSibling : null; // Aquí cambiamos 'contactoDropdown' por 'blogDropdown'
 
     if (procedimientosDropdown) procedimientosDropdown.style.display = 'none';
     if (pacienteDropdown) pacienteDropdown.style.display = 'none';
-    if (contactoDropdown) contactoDropdown.style.display = 'none';
+    if (blogDropdown) blogDropdown.style.display = 'none';  // Cambiado a 'blogDropdown'
 
     function toggleDropdown(dropdown) {
         if (dropdown) {
@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (pacienteDropdown && !pacienteDropdown.contains(target) && !paciente.contains(target)) {
             pacienteDropdown.style.display = 'none';
         }
-        if (contactoDropdown && !contactoDropdown.contains(target) && !contacto.contains(target)) {
-            contactoDropdown.style.display = 'none';
+        if (blogDropdown && !blogDropdown.contains(target) && !blog.contains(target)) {  // Cambiado a 'blogDropdown' y 'blog'
+            blogDropdown.style.display = 'none';
         }
     }
 
@@ -40,11 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    if (contacto) {
-        contacto.addEventListener('click', function (event) {
-            event.preventDefault();
-            toggleDropdown(contactoDropdown);
-        });
+    if (blog) {  // Ahora se usa 'blog' en lugar de 'contacto'
+        
     }
 
     document.addEventListener('click', hideDropdowns);
