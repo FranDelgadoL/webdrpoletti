@@ -173,10 +173,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Enlaces de navegación por idioma
 const linksByLanguage = {
-    es: { about: "pages/sobre-poletti.html" },
-    en: { about: "pages/about-poletti.html" },
-    ru: { about: "pages/o-poletti.html" },
-    it: { about: "pages/su-poletti.html" }
+    es: { about: "pages/sobre-poletti.html", 
+          firstvisit: "pages/primeravisita.html"},
+    en: { about: "pages/about-poletti.html",
+          firstvisit: "pages/firstvisit.html"},
+    ru: { about: "pages/o-poletti.html",
+          firstvisit: "pages/pervyyvzglyad.html"},
+    it: { about: "pages/su-poletti.html",
+          firstvisit: "pages/primavista.html"
+     }
 };
 
 // Modificar los enlaces de navegación según el idioma seleccionado
