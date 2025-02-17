@@ -145,9 +145,26 @@ function loadTranslations(language) {
                     element.textContent = translations[language][key];
                 }
             });
+
+            // Asegurarse de que el icono de mapa se mantenga visible
+            const mapIcon = document.querySelector('.maps i');
+            if (mapIcon) {
+                mapIcon.style.visibility = 'visible'; // Reforzar que el icono esté visible
+                mapIcon.style.display = 'inline-block'; // Asegura que el ícono se muestre correctamente
+            }
         })
         .catch(error => console.error('Error loading translations:', error));
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Asegurarse de que el icono de mapa se mantenga visible después del cambio de idioma
+    const mapIcon = document.querySelector('.maps i');
+    if (mapIcon) {
+        mapIcon.style.visibility = 'visible';
+    }
+});
+
 
 function loadCasosTranslations(language) {
     fetch('translationscasos.json')
@@ -162,6 +179,8 @@ function loadCasosTranslations(language) {
         })
         .catch(error => console.error('Error loading casos translations:', error));
 }
+
+
 
 // Verificar el idioma guardado en el localStorage al cargar la página
 document.addEventListener("DOMContentLoaded", function() {
