@@ -1,5 +1,7 @@
 {
     "es": {
+      "instagram-text": "Enlace a Instagram",
+      "linkedin-text": "Enlace a LinkedIn",
       "sports-medicine": "Medicina deportiva y ortobiología",
       "doctor-name": "DR FABIÁN POLETTI",
       "knee-hip-surgery": "Cirugía de Rodilla y Cadera",
@@ -37,6 +39,8 @@
       "hospiten-map-link": "Ver Hospiten Estepona en el mapa"
     },
     "en": {
+      "instagram-text": "Link to Instagram",
+      "linkedin-text": "Link to LinkedIn",
       "sports-medicine": "Sports Medicine and Orthobiology",
       "doctor-name": "DR FABIÁN POLETTI",
       "knee-hip-surgery": "Knee and Hip Surgery",
@@ -74,6 +78,8 @@
       "hospiten-map-link": "View Hospiten Estepona on the map"
     },
     "ru": {
+      "instagram-text": "Ссылка на Инстаграм",
+      "linkedin-text": "Ссылка на LinkedIn",
       "sports-medicine": "Спортивная медицина и ортобиология",
       "doctor-name": "ДР ФАБИАН ПОЛЕТТИ",
       "knee-hip-surgery": "Хирургия колена и бедра",
@@ -111,6 +117,8 @@
       "hospiten-map-link": "Посмотреть Hospiten Estepona на карте"
     },
     "it": {
+      "instagram-text": "Collegamento a Instagram",
+      "linkedin-text": "Collegamento a LinkedIn",
       "sports-medicine": "Medicina sportiva e ortobiologia",
       "doctor-name": "DR FABIÁN POLETTI",
       "knee-hip-surgery": "Chirurgia del ginocchio e dell'anca",

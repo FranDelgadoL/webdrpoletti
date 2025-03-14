@@ -41,20 +41,42 @@ html, body {
     }
 }
 
-.inst-icon {
-    text-align: center;
-    font-size: 35px;
-    color: #7d6702;
-    padding: 0;
+.social-icons {
+    display: flex;
+    gap: 50px; /* Espacio entre los íconos */
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    width: 100%;
+    margin-top: 20px;
 }
 
-.inst-icon ul {
-    padding: 2px;
-    margin: 0;
+.social-icons div {
+    display: flex;
+    flex-direction: row; /* Asegura que los íconos y textos estén en línea */
+    align-items: center;
+    gap: 10px; /* Espaciado uniforme entre el ícono y el texto */
 }
 
-.inst-icon ul li {
-    display: inline-block;
+.inst-icon i, .linkedin-icon i {
+    font-size: 50px; /* Tamaño uniforme */
+    line-height: 1; /* Asegura que no haya desajustes */
+}
+
+.inst-icon i {
+    color: #E4405F;
+}
+
+.linkedin-icon i {
+    font-size: 48px; /* Ajuste menor para igualar visualmente */
+    color: #0077b5;
+}
+
+.inst-text, .linkedin-text {
+    font-size: 16px;
+    color: #005b96;
+    font-weight: bold;
+    margin: 0; /* Elimina márgenes que puedan desalinear */
+    white-space: nowrap; /* Evita que el texto se divida en dos líneas */
 }
 
 .content-initial {
@@ -182,6 +204,40 @@ a {
     .phoneline {
         margin-top: 10px;
         text-align: center;
+        font-size: 14px; /* Reduce el tamaño del texto */
+    }
+    
+    .phoneline i {
+        font-size: 16px; /* Reduce el tamaño del ícono */
+    }
+    
+    .phoneline a {
+        font-size: 18px; /* Ajusta el tamaño del número de teléfono */
+    }
+
+    .social-icons {
+        flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+        gap: 50px;
+    }
+
+    .social-icons div {
+        flex-direction: column; /* Apila los íconos y los textos en móviles */
+        align-items: center;
+    }
+
+    .social-icons i {
+        font-size: 40px;
+        line-height: 1; /* Asegura que los íconos tengan la misma altura */
+    }
+
+    .inst-text, .linkedin-text {
+        margin-top: 5px;
+        text-align: left; /* Alinea el texto a la izquierda */
+        font-size: 12px;
+        white-space: nowrap;
+        display: block;
+        line-height: 1.2; /* Asegura que los textos tengan la misma altura */
+        margin-left: -30px; /* Mueve el texto más a la izquierda */
     }
 }
 
