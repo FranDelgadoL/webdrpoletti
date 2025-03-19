@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 console.log("scriptfp.js cargado correctamente");
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -193,13 +195,20 @@ document.addEventListener("DOMContentLoaded", function() {
 // Enlaces de navegación por idioma
 const linksByLanguage = {
     es: { about: "pages/sobre-poletti.html", 
-          firstvisit: "pages/primeravisita.html"},
+          firstvisit: "pages/primeravisita.html",
+          kneeArthroscopy: "pages/casos_clinicos/artroscopia-de-rodilla.html"
+        },
     en: { about: "pages/about-poletti.html",
-          firstvisit: "pages/firstvisit.html"},
+          firstvisit: "pages/firstvisit.html",
+          kneeArthroscopy: "pages/casos_clinicos/knee-arthroscopy.html"
+        },
     ru: { about: "pages/o-poletti.html",
-          firstvisit: "pages/pervyyvzglyad.html"},
+          firstvisit: "pages/pervyyvzglyad.html",
+          kneeArthroscopy: "pages/casos_clinicos/knee-arthroscopy.html"
+        },
     it: { about: "pages/su-poletti.html",
-          firstvisit: "pages/primavista.html"
+          firstvisit: "pages/primavista.html",
+          kneeArthroscopy: "pages/casos_clinicos/knee-arthroscopy.html"
      }
 };
 
