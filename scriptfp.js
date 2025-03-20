@@ -196,19 +196,28 @@ document.addEventListener("DOMContentLoaded", function() {
 const linksByLanguage = {
     es: { about: "pages/sobre-poletti.html", 
           firstvisit: "pages/primeravisita.html",
-          kneeArthroscopy: "pages/casos_clinicos/artroscopia-de-rodilla.html"
+          kneeArthroscopy: "pages/casos_clinicos/artroscopia-de-rodilla.html",
+          kneeLigamentReconstruction: "pages/casos_clinicos/reconstruccion-de-ligamentos-de-rodilla.html",
+          totalKneeReplacement: "pages/casos_clinicos/reemplazo-total-rodilla.html"
+
         },
     en: { about: "pages/about-poletti.html",
           firstvisit: "pages/firstvisit.html",
-          kneeArthroscopy: "pages/casos_clinicos/knee-arthroscopy.html"
+          kneeArthroscopy: "pages/casos_clinicos/knee-arthroscopy.html",
+          kneeLigamentReconstruction: "pages/casos_clinicos/knee-ligament-reconstruction.html",
+          totalKneeReplacement: "pages/casos_clinicos/total-knee-replacement.html"
         },
     ru: { about: "pages/o-poletti.html",
           firstvisit: "pages/pervyyvzglyad.html",
-          kneeArthroscopy: "pages/casos_clinicos/knee-arthroscopy.html"
+          kneeArthroscopy: "pages/casos_clinicos/knee-arthroscopy.html",
+          kneeLigamentReconstruction: "pages/casos_clinicos/knee-ligament-reconstruction.html",
+          totalKneeReplacement: "pages/casos_clinicos/total-knee-replacement.html"
         },
     it: { about: "pages/su-poletti.html",
           firstvisit: "pages/primavista.html",
-          kneeArthroscopy: "pages/casos_clinicos/knee-arthroscopy.html"
+          kneeArthroscopy: "pages/casos_clinicos/knee-arthroscopy.html",
+          kneeLigamentReconstruction: "pages/casos_clinicos/knee-ligament-reconstruction.html",
+          totalKneeReplacement: "pages/casos_clinicos/total-knee-replacement.html"
      }
 };
 
