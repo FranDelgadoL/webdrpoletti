@@ -201,7 +201,8 @@ const linksByLanguage = {
           totalKneeReplacement: "pages/casos_clinicos/reemplazo-total-rodilla.html",
           unicompartmentalKnee: "pages/casos_clinicos/reemplazo-rodilla.unicompartimental.html",
           patellaMaltracking: "pages/casos_clinicos/reemplazo-rodilla.unicompartimental.html",
-          kneeOsteotomy: "pages/casos_clinicos/reemplazo-rodilla.unicompartimental.html"
+          kneeOsteotomy: "pages/casos_clinicos/reemplazo-rodilla.unicompartimental.html",
+          sportsMedicine: "pages/casos_clinicos/medicina-deportiva.html"
         },
     en: { about: "pages/about-poletti.html",
           firstvisit: "pages/firstvisit.html",
@@ -210,7 +211,8 @@ const linksByLanguage = {
           totalKneeReplacement: "pages/casos_clinicos/total-knee-replacement.html",
           unicompartmentalKnee: "pages/casos_clinicos/unicompartmental-replacement.html",
           patellaMaltracking: "pages/casos_clinicos/patella-maltracking.html",
-          kneeOsteotomy: "pages/casos_clinicos/knee-osteotomy.html"
+          kneeOsteotomy: "pages/casos_clinicos/knee-osteotomy.html",
+          sportsMedicine: "pages/casos_clinicos/sports-medicine.html"
         },
     ru: { about: "pages/o-poletti.html",
           firstvisit: "pages/pervyyvzglyad.html",
@@ -219,7 +221,8 @@ const linksByLanguage = {
           totalKneeReplacement: "pages/casos_clinicos/total-knee-replacement.html",
           unicompartmentalKnee: "pages/casos_clinicos/unicompartmental-replacement.html",
           patellaMaltracking: "pages/casos_clinicos/patella-maltracking.html",
-          kneeOsteotomy: "pages/casos_clinicos/knee-osteotomy.html"
+          kneeOsteotomy: "pages/casos_clinicos/knee-osteotomy.html",
+          sportsMedicine: "pages/casos_clinicos/sports-medicine.html"
         },
     it: { about: "pages/su-poletti.html",
           firstvisit: "pages/primavista.html",
@@ -228,7 +231,8 @@ const linksByLanguage = {
           totalKneeReplacement: "pages/casos_clinicos/total-knee-replacement.html",
           unicompartmentalKnee: "pages/casos_clinicos/unicompartmental-replacement.html",
           patellaMaltracking: "pages/casos_clinicos/patella-maltracking.html",
-          kneeOsteotomy: "pages/casos_clinicos/knee-osteotomy.html"
+          kneeOsteotomy: "pages/casos_clinicos/knee-osteotomy.html",
+          sportsMedicine: "pages/casos_clinicos/sports-medicine.html"
      }
 };
 
