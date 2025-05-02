@@ -5,7 +5,7 @@
       "sports-medicine": "Medicina deportiva y ortobiología",
       "doctor-name": "DR FABIÁN POLETTI",
       "knee-hip-surgery": "Cirugía de Rodilla y Cadera",
-      "phone-number": "+34 952 76 06 00",
+      "phone-number": "+34 952 86 1400",
       "home": "Inicio",
       "about-doctor": "Acerca del Dr. Poletti",
       "procedures": "Procedimientos",
@@ -36,9 +36,10 @@
       "knee-osteotomy-link": "Osteotomía de la rodilla",
       "hip-replacement-link": "Prótesis de cadera",
       "poletti-photo-alt": "Dr. Fabián Poletti",
-      "contact-info": "Atiende en Hospiten Estepona - Málaga",
-      "hospiten-phone": "Para citas en Hospiten Estepona: +34 952 76 06 00",
-      "hospiten-map-link": "Ver Hospiten Estepona en el mapa"
+      "contact-info": "Atiende en Hospital Ochoa en Marbella y en Hospiten Estepona - Málaga",
+      "hospiten-phone": "Para citas en Hospiten Estepona: +34 952 86 1400",
+      "hospiten-map-text": "Ver Hospiten Estepona en el mapa",
+      "ochoa-map-text": "Ver Hospital Ochoa en el mapa"
     },
     "en": {
       "instagram-text": "Link to Instagram",
@@ -46,7 +47,7 @@
       "sports-medicine": "Sports Medicine and Orthobiology",
       "doctor-name": "DR FABIÁN POLETTI",
       "knee-hip-surgery": "Knee and Hip Surgery",
-      "phone-number": "+34 952 76 06 00",
+      "phone-number": "+34 952 86 1400",
       "home": "Home",
       "about-doctor": "About Dr. Poletti",
       "procedures": "Procedures",
@@ -77,9 +78,10 @@
       "knee-osteotomy-link": "Knee Osteotomy",
       "hip-replacement-link": "Hip Replacement",
       "poletti-photo-alt": "Dr. Fabian Poletti",
-      "contact-info": "Available at Hospiten Estepona - Málaga",
-      "hospiten-phone": "For appointments at Hospiten Estepona: +34 952 76 06 00",
-      "hospiten-map-link": "View Hospiten Estepona on the map"
+      "contact-info": "Available at Hospital Ochoa - Marbella and at Hospiten Estepona - Málaga",
+      "hospiten-phone": "For appointments at Hospiten Estepona: +34 952 86 1400",
+      "hospiten-map-text": "View Hospiten Estepona on the map",
+      "ochoa-map-text": "View Hospital Ochoa on the map"
     },
     "ru": {
       "instagram-text": "Ссылка на Инстаграм",
@@ -87,7 +89,7 @@
       "sports-medicine": "Спортивная медицина и ортобиология",
       "doctor-name": "ДР ФАБИАН ПОЛЕТТИ",
       "knee-hip-surgery": "Хирургия колена и бедра",
-      "phone-number": "+34 952 76 06 00",
+      "phone-number": "+34 952 86 1400",
       "home": "Главная",
       "about-doctor": "О докторе Полетти",
       "procedures": "Процедуры",
@@ -118,9 +120,10 @@
       "knee-osteotomy-link": "Остеотомия колена",
       "hip-replacement-link": "Замена тазобедренного сустава",
       "poletti-photo-alt": "Доктор Фабиан Полетти",
-      "contact-info": "Принимает в Hospiten Estepona - Малага",
-      "hospiten-phone": "Для записи в Hospiten Estepona: +34 952 76 06 00",
-      "hospiten-map-link": "Посмотреть Hospiten Estepona на карте"
+      "contact-info": "Он работает в больнице Очоа в Марбелье и в больнице Hospiten Estepona в Малаге",
+      "hospiten-phone": "Для записи в Hospiten Estepona: +34 952 86 1400",
+      "hospiten-map-text": "Посмотреть Hospiten Estepona на карте",
+      "ochoa-map-text": "Посмотреть больницу Очоа на карте"
     },
     "it": {
       "instagram-text": "Collegamento a Instagram",
@@ -128,7 +131,7 @@
       "sports-medicine": "Medicina sportiva e ortobiologia",
       "doctor-name": "DR FABIÁN POLETTI",
       "knee-hip-surgery": "Chirurgia del ginocchio e dell'anca",
-      "phone-number": "+34 952 76 06 00",
+      "phone-number": "+34 952 86 1400",
       "home": "Home",
       "about-doctor": "Informazioni sul Dr. Poletti",
       "procedures": "Procedure",
@@ -159,9 +162,10 @@
       "knee-osteotomy-link": "Osteotomia del Ginocchio",
       "hip-replacement-link": "Sostituzione dell'anca",
       "poletti-photo-alt": "Dr. Fabian Poletti",
-      "contact-info": "Riceve presso Hospiten Estepona - Málaga",
-      "hospiten-phone": "Per appuntamenti presso Hospiten Estepona: +34 952 76 06 00",
-      "hospiten-map-link": "Visualizza Hospiten Estepona sulla mappa"
+      "contact-info": "Lavora all'Ospedale Ochoa di Marbella e all'Hospiten Estepona - Málaga",
+      "hospiten-phone": "Per appuntamenti presso Hospiten Estepona: +34 952 86 1400",
+      "hospiten-map-text": "Visualizza Hospiten Estepona sulla mappa",
+      "ochoa-map-text": "Visualizza Ochoa Hospital Marbella sulla mappa"
     }
   }
 

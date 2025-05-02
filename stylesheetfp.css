@@ -804,3 +804,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+.btn[data-key="contact-btn"] {
+    display: none !important;
+  }
+  
