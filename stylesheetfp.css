@@ -808,4 +808,8 @@ html {
 .btn[data-key="contact-btn"] {
     display: none !important;
   }
+
+  .clearfix {
+    clear: both;
+  }
   
