@@ -1,165 +1,497 @@
-<?xml version='1.0' encoding='utf-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://drpoletti.com/</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/about-poletti.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/sobre-poletti.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/su-poletti.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/o-poletti.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/curriculum.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/politica-de-privacidad.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/primeravisita.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/primavista.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/firstvisit.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/pervyyvzglyad.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/casos_clinicos/artroscopia-de-rodilla.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/casos_clinicos/desviacion-rotula.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/casos_clinicos/hip-replacement.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/casos_clinicos/knee-arthroscopy.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/casos_clinicos/knee-ligament-reconstruction.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/casos_clinicos/knee-osteotonomy.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/casos_clinicos/medicina-deportiva.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/casos_clinicos/osteotomia-rodilla.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/casos_clinicos/patella-maltracking.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/casos_clinicos/protesis-cadera.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/casos_clinicos/reconstruccion-ligamentos-rodilla.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/casos_clinicos/reemplazo-rodilla-unicompartimental.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/casos_clinicos/reemplazo-total-rodilla.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/casos_clinicos/sports-medicine.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/casos_clinicos/total-knee-replacement.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://drpoletti.com/pages/casos_clinicos/unicompartmental-replacement.html</loc>
-        <lastmod>2025-05-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://drpoletti.com/</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/en/</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/ru/</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/it/</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/" />
+  </url>
+
+  <url>
+    <loc>https://drpoletti.com/casos_clinicos/artroscopia-de-rodilla.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/artroscopia-de-rodilla.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/knee-arthroscopy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/knee-arthroscopy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/knee-arthroscopy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/artroscopia-de-rodilla.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/en/clinical_cases/knee-arthroscopy.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/artroscopia-de-rodilla.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/knee-arthroscopy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/knee-arthroscopy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/knee-arthroscopy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/artroscopia-de-rodilla.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/it/casi_clinici/knee-arthroscopy.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/artroscopia-de-rodilla.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/knee-arthroscopy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/knee-arthroscopy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/knee-arthroscopy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/artroscopia-de-rodilla.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/ru/klinicheskiye_sluchai/knee-arthroscopy.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/artroscopia-de-rodilla.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/knee-arthroscopy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/knee-arthroscopy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/knee-arthroscopy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/artroscopia-de-rodilla.html" />
+  </url>
+
+  <url>
+    <loc>https://drpoletti.com/casos_clinicos/desviacion-rotula.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/desviacion-rotula.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/patella-maltracking.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/patella-maltracking.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/patella-maltracking.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/desviacion-rotula.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/en/clinical_cases/patella-maltracking.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/desviacion-rotula.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/patella-maltracking.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/patella-maltracking.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/patella-maltracking.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/desviacion-rotula.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/it/casi_clinici/patella-maltracking.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/desviacion-rotula.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/patella-maltracking.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/patella-maltracking.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/patella-maltracking.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/desviacion-rotula.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/ru/klinicheskiye_sluchai/patella-maltracking.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/desviacion-rotula.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/patella-maltracking.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/patella-maltracking.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/patella-maltracking.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/desviacion-rotula.html" />
+  </url>
+
+  <url>
+    <loc>https://drpoletti.com/casos_clinicos/medicina-deportiva.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/medicina-deportiva.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/sports-medicine.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/sports-medicine.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/sports-medicine.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/medicina-deportiva.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/en/clinical_cases/sports-medicine.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/medicina-deportiva.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/sports-medicine.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/sports-medicine.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/sports-medicine.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/medicina-deportiva.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/it/casi_clinici/sports-medicine.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/medicina-deportiva.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/sports-medicine.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/sports-medicine.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/sports-medicine.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/medicina-deportiva.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/ru/klinicheskiye_sluchai/sports-medicine.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/medicina-deportiva.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/sports-medicine.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/sports-medicine.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/sports-medicine.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/medicina-deportiva.html" />
+  </url>
+
+  <url>
+    <loc>https://drpoletti.com/casos_clinicos/osteotomia-rodilla.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/osteotomia-rodilla.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/knee-osteotomy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/knee-osteotomy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/knee-osteotomy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/osteotomia-rodilla.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/en/clinical_cases/knee-osteotomy.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/osteotomia-rodilla.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/knee-osteotomy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/knee-osteotomy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/knee-osteotomy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/osteotomia-rodilla.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/it/casi_clinici/knee-osteotomy.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/osteotomia-rodilla.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/knee-osteotomy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/knee-osteotomy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/knee-osteotomy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/osteotomia-rodilla.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/ru/klinicheskiye_sluchai/knee-osteotomy.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/osteotomia-rodilla.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/knee-osteotomy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/knee-osteotomy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/knee-osteotomy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/osteotomia-rodilla.html" />
+  </url>
+
+  <url>
+    <loc>https://drpoletti.com/casos_clinicos/protesis-cadera.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/protesis-cadera.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/hip-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/hip-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/hip-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/protesis-cadera.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/en/clinical_cases/hip-replacement.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/protesis-cadera.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/hip-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/hip-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/hip-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/protesis-cadera.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/it/casi_clinici/hip-replacement.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/protesis-cadera.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/hip-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/hip-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/hip-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/protesis-cadera.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/ru/klinicheskiye_sluchai/hip-replacement.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/protesis-cadera.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/hip-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/hip-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/hip-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/protesis-cadera.html" />
+  </url>
+
+  <url>
+    <loc>https://drpoletti.com/casos_clinicos/reconstruccion-ligamentos-rodilla.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/reconstruccion-ligamentos-rodilla.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/knee-ligament-reconstruction.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/knee-ligament-reconstruction.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/knee-ligament-reconstruction.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/reconstruccion-ligamentos-rodilla.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/en/clinical_cases/knee-ligament-reconstruction.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/reconstruccion-ligamentos-rodilla.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/knee-ligament-reconstruction.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/knee-ligament-reconstruction.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/knee-ligament-reconstruction.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/reconstruccion-ligamentos-rodilla.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/it/casi_clinici/knee-ligament-reconstruction.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/reconstruccion-ligamentos-rodilla.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/knee-ligament-reconstruction.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/knee-ligament-reconstruction.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/knee-ligament-reconstruction.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/reconstruccion-ligamentos-rodilla.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/ru/klinicheskiye_sluchai/knee-ligament-reconstruction.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/reconstruccion-ligamentos-rodilla.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/knee-ligament-reconstruction.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/knee-ligament-reconstruction.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/knee-ligament-reconstruction.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/reconstruccion-ligamentos-rodilla.html" />
+  </url>
+
+  <url>
+    <loc>https://drpoletti.com/casos_clinicos/reemplazo-rodilla-unicompartimental.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/reemplazo-rodilla-unicompartimental.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/unicompartmental-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/unicompartmental-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/unicompartmental-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/reemplazo-rodilla-unicompartimental.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/en/clinical_cases/unicompartmental-replacement.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/reemplazo-rodilla-unicompartimental.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/unicompartmental-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/unicompartmental-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/unicompartmental-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/reemplazo-rodilla-unicompartimental.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/it/casi_clinici/unicompartmental-replacement.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/reemplazo-rodilla-unicompartimental.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/unicompartmental-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/unicompartmental-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/unicompartmental-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/reemplazo-rodilla-unicompartimental.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/ru/klinicheskiye_sluchai/unicompartmental-replacement.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/reemplazo-rodilla-unicompartimental.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/unicompartmental-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/unicompartmental-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/unicompartmental-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/reemplazo-rodilla-unicompartimental.html" />
+  </url>
+
+  <url>
+    <loc>https://drpoletti.com/casos_clinicos/reemplazo-total-rodilla.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/reemplazo-total-rodilla.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/total-knee-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/total-knee-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/total-knee-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/reemplazo-total-rodilla.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/en/clinical_cases/total-knee-replacement.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/reemplazo-total-rodilla.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/total-knee-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/total-knee-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/total-knee-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/reemplazo-total-rodilla.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/it/casi_clinici/total-knee-replacement.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/reemplazo-total-rodilla.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/total-knee-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/total-knee-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/total-knee-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/reemplazo-total-rodilla.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/ru/klinicheskiye_sluchai/total-knee-replacement.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/casos_clinicos/reemplazo-total-rodilla.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/clinical_cases/total-knee-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/casi_clinici/total-knee-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/klinicheskiye_sluchai/total-knee-replacement.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/casos_clinicos/reemplazo-total-rodilla.html" />
+  </url>
+
+  <url>
+    <loc>https://drpoletti.com/pages/curriculum.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/pages/curriculum.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/pages/curriculum.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/pages/curriculum.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/pages/curriculum.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/pages/curriculum.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/en/pages/curriculum.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/pages/curriculum.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/pages/curriculum.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/pages/curriculum.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/pages/curriculum.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/pages/curriculum.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/it/pages/curriculum.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/pages/curriculum.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/pages/curriculum.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/pages/curriculum.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/pages/curriculum.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/pages/curriculum.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/ru/pages/curriculum.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/pages/curriculum.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/pages/curriculum.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/pages/curriculum.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/pages/curriculum.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/pages/curriculum.html" />
+  </url>
+
+  <url>
+    <loc>https://drpoletti.com/pages/primeravisita.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/pages/primeravisita.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/pages/firstvisit.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/pages/pervyyvzglyad.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/pages/primavista.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/pages/primeravisita.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/en/pages/firstvisit.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/pages/primeravisita.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/pages/firstvisit.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/pages/pervyyvzglyad.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/pages/primavista.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/pages/primeravisita.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/it/pages/primavista.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/pages/primeravisita.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/pages/firstvisit.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/pages/pervyyvzglyad.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/pages/primavista.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/pages/primeravisita.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/ru/pages/pervyyvzglyad.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/pages/primeravisita.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/pages/firstvisit.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/pages/primavista.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/pages/pervyyvzglyad.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/pages/primeravisita.html" />
+  </url>
+
+  <url>
+    <loc>https://drpoletti.com/pages/sobre-poletti.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/pages/sobre-poletti.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/pages/about-poletti.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/pages/o-poletti.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/pages/su-poletti.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/pages/sobre-poletti.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/en/pages/about-poletti.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/pages/sobre-poletti.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/pages/about-poletti.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/pages/o-poletti.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/pages/su-poletti.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/pages/sobre-poletti.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/it/pages/su-poletti.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/pages/sobre-poletti.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/pages/about-poletti.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/pages/o-poletti.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/pages/su-poletti.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/pages/sobre-poletti.html" />
+  </url>
+  <url>
+    <loc>https://drpoletti.com/ru/pages/o-poletti.html</loc> <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drpoletti.com/pages/sobre-poletti.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drpoletti.com/en/pages/about-poletti.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://drpoletti.com/it/pages/su-poletti.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drpoletti.com/ru/pages/o-poletti.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drpoletti.com/pages/sobre-poletti.html" />
+  </url>
+
 </urlset>

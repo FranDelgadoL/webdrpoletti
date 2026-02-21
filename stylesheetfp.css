@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+/* ========================================= */
+/* 1. Reset Básico y Tipografía Global */
+/* ========================================= */
+
 @font-face {
     font-family: 'Philosopher';
     src: url('Philosopher-Regular.ttf') format('truetype');
@@ -14,8 +18,28 @@ html, body {
     padding: 0;
     background-color: #f4f4f4;
     font-family: 'Philosopher', Arial, sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Mantiene el scroll horizontal a raya */
 }
+
+/* Estilos de enlaces globales */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; /* Un color de hover más consistente */
+}
+
+/* Clearfix utility */
+.clearfix {
+    clear: both;
+}
+
+/* ========================================= */
+/* 2. Sección de Idiomas (Flags) */
+/* ========================================= */
 
 .sections-stack .content.flags {
     display: flex;
@@ -23,7 +47,7 @@ html, body {
     gap: 150px;
     padding: 0;
     background-color: #06026b;
-    max-width: 100%;
+    max-width: 100%; /* Si ya usas `width: 100%`, `max-width: 100%` es redundante */
 }
 
 .sections-stack .content.flags a img {
@@ -43,23 +67,24 @@ html, body {
 
 .social-icons {
     display: flex;
-    gap: 50px; /* Espacio entre los íconos */
+    gap: 50px;
     align-items: center;
-    justify-content: center; /* Centra horizontalmente */
+    justify-content: center;
     width: 100%;
     margin-top: 20px;
 }
 
 .social-icons div {
     display: flex;
-    flex-direction: row; /* Asegura que los íconos y textos estén en línea */
+    flex-direction: row;
     align-items: center;
-    gap: 10px; /* Espaciado uniforme entre el ícono y el texto */
+    gap: 10px;
 }
 
-.inst-icon i, .linkedin-icon i {
-    font-size: 50px; /* Tamaño uniforme */
-    line-height: 1; /* Asegura que no haya desajustes */
+.inst-icon i,
+.linkedin-icon i {
+    font-size: 50px;
+    line-height: 1;
 }
 
 .inst-icon i {
@@ -71,86 +96,68 @@ html, body {
     color: #0077b5;
 }
 
-.inst-text, .linkedin-text {
+.inst-text,
+.linkedin-text {
     font-size: 16px;
     color: #005b96;
     font-weight: bold;
-    margin: 0; /* Elimina márgenes que puedan desalinear */
-    white-space: nowrap; /* Evita que el texto se divida en dos líneas */
-}
-
-.content-initial {
-    display: flex;
-    justify-content: center;
-    padding: 40px;
     margin: 0;
-    background-color: #fafbfc;
+    white-space: nowrap;
 }
 
 .initial {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 1100%;
+    justify-content: space-around; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center; /* Centra verticalmente */
+    max-width: 1100px; /* Un ancho máximo más razonable para el contenido */
     width: 100%;
+    margin: 0 auto; /* Centra el contenedor `initial` en la página */
+    padding: 40px 20px; /* Añadir padding para que el contenido no pegue a los bordes */
+    box-sizing: border-box; /* Incluye padding en el ancho */
+    background-color: #f4f4f4; /* Mueve el color de fondo aquí si `content-initial` no se usa */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
 }
 
-.content-initial h3 {
-    font-size: 32px;
-    color: #005b96;
-    margin: 0;
-    text-align: center;
-}
-
-.content-initial p {
+.initial p {
     font-size: 22px;
     color: #666;
     margin: 0;
     text-align: center;
+    flex-basis: 100%; /* Por defecto, que ocupen todo el ancho en una columna */
+    padding: 5px 0; /* Espaciado entre ellos */
 }
 
-.content-initial a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-h6 {
-    font-size: 16px;
-    color: #fff;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-}
-
-.midpage-header {
-    text-align: center;
-    background-color: #f4f4f4;
-}
-
-.midpage-header h3 {
+/* Estilos específicos para el H1 dentro de .initial */
+.initial h1 {
+    font-size: 38px; /* Ajusta este tamaño según tu diseño */
     color: #005b96;
+    margin: 10px 0; /* Espacio arriba y abajo del H1 */
+    text-align: center;
+    flex-basis: 100%; /* Ocupa todo el ancho */
+}
+/* Estilo para el número de teléfono dentro de .initial */
+.initial .phoneline {
+    font-size: 22px; /* Puedes ajustar el tamaño del texto del teléfono */
+    margin-top: 15px; /* Espacio si es necesario */
+    text-align: center;
+    width: 100%; /* Asegura que ocupe todo el ancho si está en una línea propia */
+}
+.initial .phoneline i {
+    font-size: 24px; /* Tamaño del icono del teléfono */
+    color: #007bff; /* Color del icono del teléfono */
+}
+.initial .phoneline a {
+    color: #007bff; /* Color del número de teléfono */
+    font-weight: bold;
 }
 
-.first-part {
-    margin-right: 10px;
-}
 
-.second-part {
-    display: inline-block;
-    padding-left: 0;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
 
 .divider {
     width: 100%;
     height: 2px;
     background-color: #0056b3;
-    margin: 1px;
+    margin: 1px 0; /* Ajustado para eliminar margen izquierdo/derecho */
 }
 
 .nav-principal {
@@ -160,9 +167,9 @@ a {
 .nav-bar {
     max-width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Distribuye elementos a los lados */
     align-items: center;
-    padding: 0 20px;
+    padding: 0 20px; /* Padding a los lados */
 }
 
 .nav-bar ul {
@@ -191,152 +198,41 @@ a {
     background-color: #0056b3;
 }
 
-.midpage-container h3 {
-    font-size: 36px;
-}
-
-@media (max-width: 768px) {
-    .initial {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .phoneline {
-        margin-top: 10px;
-        text-align: center;
-        font-size: 14px; /* Reduce el tamaño del texto */
-    }
-    
-    .phoneline i {
-        font-size: 16px; /* Reduce el tamaño del ícono */
-    }
-    
-    .phoneline a {
-        font-size: 18px; /* Ajusta el tamaño del número de teléfono */
-    }
-
-    .social-icons {
-        flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
-        gap: 50px;
-    }
-
-    .social-icons div {
-        flex-direction: column; /* Apila los íconos y los textos en móviles */
-        align-items: center;
-    }
-
-    .social-icons i {
-        font-size: 40px;
-        line-height: 1; /* Asegura que los íconos tengan la misma altura */
-    }
-
-    .inst-text, .linkedin-text {
-        margin-top: 5px;
-        text-align: left; /* Alinea el texto a la izquierda */
-        font-size: 12px;
-        white-space: nowrap;
-        display: block;
-        line-height: 1.2; /* Asegura que los textos tengan la misma altura */
-        margin-left: -30px; /* Mueve el texto más a la izquierda */
-    }
-}
-
+/* Estilos de la navegación (ul, li, a) - reorganizados para claridad */
 .nav-menu {
     list-style: none;
-    padding: 10px 15px;
+    padding: 10px 15px; /* Padding interno */
     align-items: center;
-    justify-content: space-around;
-    flex: 1;
+    justify-content: space-around; /* Centra los items con espacio */
+    flex: 1; /* Permite que el menú ocupe el espacio */
     text-align: center;
+    display: flex; /* Asegura que los ítems estén en línea */
 }
 
 .nav-menu li {
     position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.nav-menu {
-    display: flex;
-}
-
-.nav-menu > li {
-    display: inline-block;
-}
-
-@media (max-width: 768px) {
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .nav-menu > li {
-        display: block;
-        margin: 0;
-    }
-
-    .nav-menu > li a {
-        padding: 0;
-    }
+    display: flex; /* Para centrar el contenido de cada li */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
 }
 
 .nav-item {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
-    padding: 0;
-    display: block;
+    padding: 0; /* Padding ya está en el li a */
+    display: block; /* Para que ocupe todo el espacio del li */
 }
 
-.nav-container {
+.nav-container { /* Redundante con .nav-bar si es el mismo contenedor */
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 100%;
-    margin: 20px;
+    margin: 20px; /* Revisa si este margen es intencional o si debería ser 0 auto */
     padding: 0 20px;
     width: 100%;
     box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-    .nav-menu {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        flex-wrap: wrap;
-        align-items: flex-start;
-    }
-
-    .nav-menu > li {
-        display: inline-block;
-        width: 33.33%;
-        text-align: center;
-    }
-
-    .nav-menu > li:nth-child(n+4) {
-        width: 50%;
-        text-align: center;
-    }
-
-    .nav-menu > li a {
-        padding: 10px 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-bar {
-        padding: 0;
-    }
-
-    .nav-container {
-        padding: 0;
-    }
 }
 
 .nav-item.dropdown {
@@ -357,150 +253,31 @@ a {
     display: none;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-ul li {
-    display: inline-block;
-    position: relative;
-}
-
-ul li ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #007bff;
-    padding: 10px;
-    list-style: none;
-    margin: 0;
-}
-
-ul li:hover ul {
-    display: block;
-}
-
-ul li ul li {
-    display: block;
-    padding: 5px 0;
-}
-
-.slideshow {
-    position: relative;
-    overflow: hidden;
-}
-
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    transition: transform 0.5s ease;
-}
-
-.slide img {
-    width: 100%;
-    max-height: 60vh;
-    object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    .slideshow {
-        height: 70vh;
-    }
-
-    .slide img {
-        height: 60vh;
-        max-height: 60vh;
-    }
-}
-
-.slide-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-}
-
-.slides-nav {
-    position: absolute;
-    bottom: 45px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    pointer-events: none;
-}
-
-.slides-nav a {
-    pointer-events: auto;
-    color: white;
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn-text {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    color: #f7f016;
-}
-
-.slide-content h1 {
-    margin-bottom: 10px;
-}
-
-.slide-content h2 {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s ease;
-}
-
-
-.dropdown-content {
+/* Estilos para dropdowns (generalizados) */
+ul.dropdown-content { /* Selectores más específicos para evitar conflictos */
     display: none;
     position: absolute;
     background-color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    min-width: 160px; /* Ajusta según sea necesario */
+    min-width: 160px;
+    top: 100%; /* Asegura que caiga justo debajo del padre */
+    left: 0;
+    list-style: none; /* Asegura que no tenga puntos */
+    padding: 0; /* Elimina padding por defecto */
+    margin: 0; /* Elimina margen por defecto */
 }
 
+ul.dropdown-content li {
+    display: block; /* Cada item del dropdown en su propia línea */
+}
 
-.dropdown-content .nav-item {
+ul.dropdown-content .nav-item {
     color: black;
-    text-decoration: none;
-    display: block;
+    padding: 10px 15px; /* Añade padding para hacer clic más fácil */
 }
 
-.dropdown-content .nav-item:hover {
+ul.dropdown-content .nav-item:hover {
     background-color: #f1f1f1;
 }
 
@@ -508,18 +285,26 @@ a {
     display: block;
 }
 
+/* El dropdown-content-blog parece ser un duplicado de dropdown-content, ¿se puede consolidar? */
 .dropdown-content-blog {
     display: none;
     position: absolute;
     background-color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    min-width: 160px; /* Añadido para consistencia */
+    top: 100%; /* Añadido para consistencia */
+    left: 0; /* Añadido para consistencia */
+    list-style: none; /* Añadido para consistencia */
+    padding: 0; /* Añadido para consistencia */
+    margin: 0; /* Añadido para consistencia */
 }
 
 .dropdown-content-blog .nav-item {
     color: black;
     text-decoration: none;
     display: block;
+    padding: 10px 15px; /* Añadido para consistencia */
 }
 
 .dropdown-content-blog .nav-item:hover {
@@ -530,118 +315,265 @@ a {
     display: block;
 }
 
+/* ========================================= */
+/* 6. Slideshow / Carrusel */
+/* ========================================= */
 
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 60vh;
+    min-height: 400px;
+    margin-bottom: 0; /* ¡Asegura que el slideshow no tenga un margen inferior que empuje el siguiente elemento! */
+}
 
-.section-container {
-    margin-bottom: 30px; /* Espacio entre secciones */
+.slides-container {
+    display: flex; /* Coloca los slides uno al lado del otro */
+    transition: transform 0.5s ease-in-out; /* Suaviza la transición entre slides */
+    height: 100%; /* ¡Crucial! Ocupa el 100% de la altura de .slideshow */
+    list-style: none; /* Elimina viñetas por defecto del UL */
+    padding: 0;       /* Elimina padding por defecto del UL */
+    margin: 0;        /* Elimina margen por defecto del UL */
+}
+
+.slide {
+    flex: 0 0 100%; /* Cada slide ocupa exactamente el 100% del ancho del contenedor */
+    height: 100%; /* ¡Crucial! Ocupa el 100% de la altura de .slides-container */
+    position: relative; /* Necesario para posicionar el .slide-content de forma absoluta */
+}
+
+.slide img {
+    width: 100%; /* La imagen ocupa el 100% del ancho de su padre (.slide) */
+    height: 100%; /* ¡CLAVE! La imagen ocupa el 100% de la altura de su padre (.slide) */
+    object-fit: cover; /* Escala la imagen para cubrir el área, recortando si es necesario */
+}
+
+.slide-content {
+    position: absolute; /* Permite posicionarlo sobre la imagen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el contenido */
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    width: 80%; /* Para que el texto no sea excesivamente ancho */
+    max-width: 800px; /* Limita el ancho máximo del contenido */
+    z-index: 10; /* Asegura que esté por encima de la imagen */
+    text-align: center; /* Centra el texto dentro del contenido */
+}
+
+.slide-content h2 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.slide-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.slides-nav a {
+    pointer-events: auto;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* MODIFICACIONES AQUÍ: */
+    padding: 4px 8px;   /* Reducido para hacer el botón más pequeño en general */
+    font-size: 12px;    /* Reducido para hacer el texto "Prev" / "Next" más pequeño */
+    /* --- */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.slides-nav {
+    position: absolute;
+    bottom: 80px; /* Ajusta este valor si necesitas más o menos espacio con "Pedir Cita" */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    box-sizing: border-box;
+    z-index: 20;
+}
+
+.slides-nav a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ========================================= */
+/* Media Queries para el Slideshow */
+/* ========================================= */
+
+@media (max-width: 768px) {
+    .slideshow {
+        height: 70vh; /* Altura ajustada para móviles */
+        min-height: 350px;
+    }
+    .slide-content h2 {
+        font-size: 1.8em;
+    }
+    .slide-content h3 {
+        font-size: 1.1em;
+    }
+   
+}
+
+ .slides-nav .prev,
+    .slides-nav .next {
+        padding: 4px 8px; /* Hace los botones más pequeños */
+        font-size: 12px;   /* Reduce el tamaño del texto "Prev"/"Next" */
+    }
+
+    /* Puedes ajustar también la posición inferior del contenedor de navegación si lo necesitas más arriba o abajo en móvil */
+    .slides-nav {
+        bottom: 40px; /* Por ejemplo, si 80px es demasiado en pantallas pequeñas */
+    }
+
+/* Estilos para botones generales */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición para color también */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Color de hover para el botón */
+    color: #f7f016;
+}
+
+.btn-text { /* Esto parece redundante si .btn ya lo hace, ¿se usa en otro lado? */
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.midpage-container {
+    text-align: center;
+    padding: 0px; /* Ya lo tienes en 0, lo cual está bien */
+    /* Añadimos un margen superior explícito a 0 para sobrescribir cualquier estilo por defecto o heredado */
+    margin-top: 0; 
+}
+
+.midpage-header h3 {
+    font-size: 36px;
+    color: #005b96;
+    margin-top: 0; /* ¡Importante! Elimina el margen superior por defecto de los h3 */
+    margin-bottom: 0px; 
+}
+
+.paragraph p {
+    /* Tu CSS actual: margin: 0px auto; esto es abreviado para 0px arriba/abajo y auto a los lados. */
+    /* Lo cambiamos a solo horizontalmente para evitar que añada espacio vertical. */
+    margin-left: auto;   /* Centra horizontalmente */
+    margin-right: auto;  /* Centra horizontalmente */
+    margin-top: 0;       /* ¡Importante! Elimina el margen superior por defecto del párrafo */
+    margin-bottom: 0;    /* Elimina el margen inferior por defecto del párrafo si no se necesita */
+    padding: 0;
+    color: #666666;
+    max-width: 800px;
+    line-height: 1.6;
+    font-size: 22px;
 }
 
 .cases-container {
-    max-width: 1268.8px; /* Ajusta este valor según el diseño deseado */
-    margin: 0 auto; /* Centra el contenedor en la página */
-    padding: 20px; /* Añade algo de padding alrededor */
+    max-width: 1268.8px;
+   
 }
 
 .section-title {
-    text-align: center; /* Centra el texto horizontalmente */
-    font-size: 28px; /* Ajusta el tamaño de la fuente */
-    color: #005B96; /* Color del texto */
-    margin-bottom: 20px; /* Espacio inferior para separar el título del contenido */
+    text-align: center;
+    font-size: 28px;
+    color: #005B96;
+    margin-bottom: 20px;
 }
 
-
 .caseslist {
-    display: flex; /* Usamos flexbox para colocar los elementos uno al lado del otro */
-    justify-content: center; /* Espacio equitativo entre los elementos */
-    align-items: center; /* Alinea los elementos verticalmente */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+
+}
+
+.h2-especialidad {
+    font-size: 28px; 
+    color: #005B96;
 }
 
 .caseslist-cases {
-    padding: 0px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    flex: 1; /* Hace que la división ocupe el espacio disponible */
+    padding: 0px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px; /* Ajusta el ancho mínimo antes de envolver */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los elementos horizontalmente */
+    align-items: center;
+    text-align: center; /* Para los ítems de la lista */
 }
 
 .caseslist-cases .fa-ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    padding-left: 0; /* Ajusta el padding predeterminado de la lista */
-    margin: 0; /* Elimina el margen predeterminado de la lista */
-    width: 100%; /* Asegura que la lista ocupe todo el ancho del contenedor */
-    text-align: center; /* Centra el texto */
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
 }
 
 .caseslist-cases .fa-ul li {
-    display: flex; /* Usamos flexbox para alinear elementos */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .caseslist-cases .fa-ul li::before {
-    content: "\f101"; /* Código del icono */
-    font-family: "Font Awesome 5 Free"; /* Asegúrate de que estás usando la familia de fuentes correcta */
-    font-weight: 900; /* Font Awesome necesita el peso correcto para algunos iconos */
-    color: #007bff; /* Color del icono */
-    margin-right: 10px; /* Espacio entre el icono y el texto */
+    content: "\f101";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #007bff;
+    margin-right: 10px;
 }
 
 .caseslist-cases .fa-ul li a {
-    color: #005b96; /* Color del enlace */
-    text-decoration: none; /* Elimina el subrayado */
-    font-size: 20px; /* Tamaño de fuente */
+    color: #005b96;
+    text-decoration: none;
+    font-size: 20px;
+    white-space: nowrap;   /* ¡CLAVE! Evita que el texto se rompa en múltiples líneas */
+    overflow: hidden;      /* Oculta el texto que excede el ancho del contenedor */
+    text-overflow: ellipsis; /* Añade puntos suspensivos (...) al final si el texto es muy largo */
+    display: block;        /* Asegura que el enlace se comporte como un bloque para que overflow funcione */
+    max-width: 100%;       /* Opcional: Asegura que no se expanda más allá de su padre */
 }
 
 .polettiphoto {
-    flex: 1; /* Hace que la división ocupe el espacio disponible */
-    display: flex; /* Usamos flexbox para alinear la imagen */
-    justify-content: center; /* Centra la imagen horizontalmente */
-    align-items: center; /* Centra la imagen verticalmente */
+    flex: 1;
+    min-width: 300px; /* Ajusta el ancho mínimo antes de envolver */
+    display: flex;
+    justify-content:left;
+    align-items: center;
 }
 
 .polettiphoto img {
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 10px; /* Bordes redondeados */
-}
-
-@media (max-width: 768px) {
-    .caseslist {
-        flex-direction: column; /* Cambia a disposición en columna en pantallas pequeñas */
-        align-items: center; /* Alinea los elementos al centro en pantallas pequeñas */
-    }
-
-    .caseslist-cases, .polettiphoto {
-        margin-right: 0; /* Elimina el margen en pantallas pequeñas */
-        margin-bottom: 20px; /* Añade margen inferior entre los elementos en columna */
-    }
-
-    .polettiphoto {
-        margin-bottom: 0; /* Elimina el margen inferior del último elemento */
-    }
-}
-
-.two-buttons {
-    display: flex;
-    justify-content: center; /* Centra las columnas horizontalmente */
-    gap: 30px; /* Espacio entre las columnas */
-    max-width: 100%; /* Ancho máximo */
-    
-}
-
-.two-buttons a {
-    background-color: #23297d;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .small-container {
-    width: 100%; /* Ancho completo */
+    width: 100%;
     display: flex;
-    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    text-align: center; /* Alinea el texto centrado */
-    margin-top: 0px; /* Espacio superior */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0px;
 }
 
 .small-info {
@@ -650,28 +582,25 @@ a {
     margin: 20px 20px 10px;
 }
 
-.maps i {
-    visibility: visible !important;
-}
-
-
-
 .maps {
     margin-top: 0px;
     margin-bottom: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Centra los enlaces del mapa */
+    flex-wrap: wrap; /* Permite que los enlaces se envuelvan */
 }
 
 .maps a {
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: #545353; /* Color del texto */
-    font-size: 18px; /* Tamaño de fuente */
-    padding: 20px; /* Añade un espacio interno alrededor de cada enlace */
+    text-decoration: none;
+    color: #545353;
+    font-size: 18px;
+    padding: 10px 20px; /* Ajusta el padding para un mejor click */
+    display: flex; /* Alinea icono y texto */
+    align-items: center;
 }
 
 .maps a i {
-    margin-right: 10px; /* Añade espacio a la derecha del ícono para separación */
+    margin-right: 10px;
     color: #ba0b0b;
 }
 
@@ -679,7 +608,7 @@ a {
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 150px; /* Ajusta la altura según sea necesario */
+    height: 150px;
     margin-top: 30px;
     margin-bottom: 10px;
     background: white;
@@ -688,19 +617,19 @@ a {
 .logo-track {
     display: flex;
     animation: scroll 50s linear infinite;
-    width: calc(210px * 9); /* Ajusta esto según la cantidad de logos */
+    width: calc(210px * 9);
 }
 
 .logo-slide {
     flex: 0 0 auto;
-    width: 200px; /* Ajusta el ancho de cada logo */
-    margin-right: 10px; /* Espacio entre los logos */
+    width: 200px;
+    margin-right: 10px;
 }
 
 .logo-slide img {
     width: 100%;
-    height: 150px; /* Ajusta la altura según sea necesario */
-    object-fit: contain; /* Mantiene la proporción de la imagen sin distorsionarla */
+    height: 150px;
+    object-fit: contain;
     display: block;
 }
 
@@ -709,158 +638,272 @@ a {
     100% { transform: translateX(calc(-210px * 9)); }
 }
 
+
 .final-container {
     display: flex;
-    justify-content: center; /* Centra el contenedor interno horizontalmente */
-    width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
+    justify-content: center;
+    width: 100%;
     padding: 20px;
-    box-sizing: border-box; /* Incluye el padding dentro del ancho total */
+    box-sizing: border-box;
+    background-color: #06026b; /* Añadir un color de fondo para la sección final si es diferente al footer */
 }
 
 .custom-columns {
     display: flex;
-    justify-content: center; /* Centra los elementos dentro de custom-columns */
-    align-items: center; /* Centra los elementos verticalmente */
-    max-width: 1200px; /* Establece un ancho máximo para limitar la expansión */
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
     width: 100%;
-    gap: 100px; /* Añade espacio entre las columnas */
-    color: #005b96;
+    gap: 100px;
+    color: #fff; /* Cambiado a blanco para contraste con fondo oscuro */
     font-size: 20px;
+    flex-wrap: wrap; /* Permite el ajuste en móviles */
 }
 
-@media (max-width: 768px) {
-    .custom-columns {
-        flex-direction: column; /* Cambia a disposición vertical en dispositivos móviles */
-        align-items: center; /* Alinea los elementos a la izquierda */
-        text-align: center; /* Centra el texto en dispositivos móviles */
-        gap: 10px;
-    }
+.custom-columns .column { /* Si tienes un div.column específico */
+    flex: 1; /* Permite que la columna crezca */
+    min-width: 280px; /* Ancho mínimo para la columna antes de envolver */
+    text-align: left; /* Alinea el texto a la izquierda dentro de la columna */
 }
 
-@media (max-width: 480px) {
-    .custom-columns {
-        font-size: 16px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
-    }
+.final-container p { /* Estilos para los párrafos dentro de final-container, incluyendo la dirección */
+    margin: 0;
+    padding: 5px 0; /* Un poco de padding */
+    text-align: left; /* Alineación del texto de dirección */
+    color: #fff; /* Color para los párrafos en esta sección */
 }
 
+.final-container a { /* Estilos de enlace específicos para el final-container */
+    color: #fff;
+    text-decoration: none;
+}
+
+.final-container a:hover {
+    text-decoration: underline;
+}
+
+
+/* El .flat-button no parece usarse en el HTML que me pasaste, ¿es un remanente? */
 .flat-button a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s ease; /* Animación para el cambio de color */
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.paragraph p {
-    margin: 20px; /* Elimina el margen predeterminado del párrafo */
-    padding: 0; /* Elimina el padding predeterminado del párrafo */
-    text-decoration: none; /* Elimina cualquier decoración de enlace */
-    color: #666666; /* Color del texto */
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 22px;
-}
 
-/* Estilos por defecto: oculta los elementos en pantalla grande */
+/* Mobile Nav Toggle (Hamburguesa) - Asegúrate de que el HTML tenga estos elementos */
 #mobile-nav-toggle,
 .nav-branding {
-    display: none;
-}
-
-/* Estilos para pantallas pequeñas: muestra los elementos */
-@media (max-width: 768px) {
-    #mobile-nav-toggle,
-    .nav-branding {
-        display: block;
-    }
+    display: none; /* Oculto por defecto */
 }
 
 footer {
-    text-align: center; /* Centra el contenido dentro del footer */
-    margin-top: 0px; /* Espacio superior para separarlo del contenido principal */
-	background-color: #7a7373;
-	padding: 15px 0;
+    text-align: center;
+    margin-top: 0px;
+    background-color: #7a7373;
+    padding: 15px 0;
 }
 
 footer p {
-    display: inline-block; /* Coloca el contenido en línea */
-    margin: 0; /* Elimina el margen por defecto de los párrafos dentro del footer */
-	color: #f9fae8;
-				
+    display: inline-block;
+    margin: 0;
+    color: #f9fae8;
 }
 
 footer .separator {
-    margin: 0 20px; /* Ajusta el margen a ambos lados del separador */
+    margin: 0 20px;
 }
 
 footer img {
-    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
-    margin-left: 5px; /* Ajusta el margen izquierdo de la imagen */
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+footer a { /* Ya tenemos estilos de a globales y para final-container, considerar si este es redundante */
+    color: #005b9f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+@media (max-width: 768px) {
+    /* Flags */
+    .sections-stack .content.flags {
+        gap: 20px;
+    }
 
-/* .btn[data-key="contact-btn"] {
-    display: none !important;
-  }  */
+    /* Initial Section (H1 y párrafos) */
+    .initial {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px; /* Reduce padding en móvil */
+    }
+     .initial h1 {
+        font-size: 28px; /* Este es el tamaño para móvil */
+        margin-bottom: 5px; /* Y este el margen */
+    }
+    
+    .initial p {
+        font-size: 18px; /* Ajusta párrafos para móvil */
+        padding: 2px 0;
+    }
+    .phoneline {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .phoneline i {
+        font-size: 16px;
+    }
+    .phoneline a {
+        font-size: 18px;
+    }
 
-  .clearfix {
-    clear: both;
-  }
-  
-  .privacy-container {
-    background-color: #ffffff;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-size: 14px;
-    color: #333;
-    line-height: 1.6;
-  }
+    /* Social Icons */
+    .social-icons {
+        flex-wrap: wrap;
+        gap: 20px; /* Reduce gap */
+    }
+    .social-icons div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-icons i {
+        font-size: 40px;
+        line-height: 1;
+    }
+    .inst-text, .linkedin-text {
+        margin-top: 5px;
+        text-align: center; /* Centrar en móvil */
+        font-size: 12px;
+        white-space: nowrap;
+        display: block;
+        line-height: 1.2;
+        margin-left: 0; /* Elimina el margen negativo si ya se centra */
+    }
 
-  .privacy-container h1 {
-    font-size: 22px;
-    color: #005b9f;
-    margin-bottom: 20px;
-  }
+    /* Navigation */
+    .nav-bar {
+        padding: 0;
+    }
+    .nav-container {
+        padding: 0;
+    }
+    .nav-menu {
+        flex-direction: row; /* Mantener fila para ahora, pero revisar diseño móvil */
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center; /* Centra los items si se envuelven */
+    }
+    .nav-menu > li {
+        width: 33.33%; /* Tres columnas */
+        text-align: center;
+        margin-right: 0; /* Elimina margen derecho si usas width % */
+    }
+    .nav-menu > li:nth-child(n+4) {
+        width: 50%; /* Dos columnas para los que se pasan */
+    }
+    .nav-menu > li a {
+        padding: 10px 5px; /* Ajusta padding */
+        font-size: 16px; /* Ajusta tamaño de fuente */
+    }
 
-  .privacy-container h2 {
-    font-size: 16px;
-    color: #005b9f;
-    margin-top: 20px;
-  }
+    /* Slideshow */
+    .slideshow {
+        height: 70vh;
+        min-height: 350px; /* Ajusta altura mínima para móviles */
+    }
+   
+    .slide-content h2 { /* Títulos del slide en móvil */
+        font-size: 1.8em;
+    }
+    .slide-content h3 { /* Subtítulos del slide en móvil */
+        font-size: 1.1em;
+    }
+    .slides-nav {
+        bottom: 40px; /* Ajusta posición de navegación del slide */
+    }
+    .slides-nav a {
+        padding: 8px 15px; /* Botones más pequeños */
+        font-size: 0.9em;
+    }
 
-  .privacy-container ul {
-    padding-left: 20px;
-    margin-top: 10px;
-  }
+    .h2-especialidad {
+        font-size: 24px; /* O el tamaño que desees para móvil, a menudo un poco más pequeño */
+        color: #005B96; /* Mantén el mismo color, o cámbialo si quieres */
+    }
 
-  .privacy-container p {
-    margin: 10px 0;
-  }
+    /* Midpage */
+    .midpage-header h3 {
+        font-size: 28px; /* Ajusta para móvil */
+    }
+    .paragraph p {
+        font-size: 18px; /* Ajusta para móvil */
+      
+    }
 
-  .privacy-container a {
-    color: #005b9f;
-    text-decoration: none;
-  }
+    /* Cases and Procedures */
+    .caseslist {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .caseslist-cases, .polettiphoto {
+        margin-bottom: 20px;
+        min-width: unset; /* Elimina el min-width para que se ajuste */
+    }
+    .caseslist-cases .fa-ul li {
+        padding-left: 0; /* Centra completamente los ítems en móvil */
+        justify-content: center;
+    }
+    .caseslist-cases .fa-ul li a {
+        font-size: 18px;
+    }
+    .polettiphoto {
+        margin-bottom: 0;
+    }
 
-  .privacy-container a:hover {
-    text-decoration: underline;
-  }
-  
-  footer a {
-    color: #005b9f;
-    text-decoration: none;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
-  
+    /* Final Container / Custom Columns */
+    .custom-columns {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px; /* Reduce gap */
+    }
+    .custom-columns .column {
+        min-width: unset; /* Elimina el min-width */
+        text-align: center; /* Centra el texto */
+    }
+
+    /* Footer */
+    footer p {
+        display: block; /* Cada elemento en su propia línea */
+        margin-bottom: 5px;
+    }
+    footer .separator {
+        display: none; /* Oculta separador en móvil si los items están apilados */
+    }
+
+    /* Mobile Nav Toggle (Hamburguesa) - Muestra en móvil */
+    #mobile-nav-toggle,
+    .nav-branding {
+        display: block; /* Mostrar el botón de hamburguesa y logo si existen en HTML */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes adicionales para pantallas aún más pequeñas si es necesario */
+    .custom-columns {
+        font-size: 16px;
+    }
+}

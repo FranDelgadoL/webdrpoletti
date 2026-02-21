@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Allow: /images/
+Allow: /fonts/
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.woff2$
+Allow: /*.ttf$
+
+Sitemap: https://drpoletti.com/sitemap.xml
+Sitemap: https://drpoletti.com/blog/sitemap_index.xml
