@@ -11,14 +11,16 @@
     font-style: normal;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     font-family: 'Philosopher', Arial, sans-serif;
-    overflow-x: hidden; /* Mantiene el scroll horizontal a raya */
+    overflow-x: hidden;
+    /* Mantiene el scroll horizontal a raya */
 }
 
 /* Estilos de enlaces globales */
@@ -29,7 +31,8 @@ a {
 }
 
 a:hover {
-    color: #0056b3; /* Un color de hover más consistente */
+    color: #0056b3;
+    /* Un color de hover más consistente */
 }
 
 /* Clearfix utility */
@@ -47,7 +50,8 @@ a:hover {
     gap: 150px;
     padding: 0;
     background-color: #06026b;
-    max-width: 100%; /* Si ya usas `width: 100%`, `max-width: 100%` es redundante */
+    max-width: 100%;
+    /* Si ya usas `width: 100%`, `max-width: 100%` es redundante */
 }
 
 .sections-stack .content.flags a img {
@@ -92,7 +96,8 @@ a:hover {
 }
 
 .linkedin-icon i {
-    font-size: 48px; /* Ajuste menor para igualar visualmente */
+    font-size: 48px;
+    /* Ajuste menor para igualar visualmente */
     color: #0077b5;
 }
 
@@ -107,15 +112,23 @@ a:hover {
 
 .initial {
     display: flex;
-    justify-content: space-around; /* Distribuye los elementos con espacio entre ellos */
-    align-items: center; /* Centra verticalmente */
-    max-width: 1100px; /* Un ancho máximo más razonable para el contenido */
+    justify-content: space-around;
+    /* Distribuye los elementos con espacio entre ellos */
+    align-items: center;
+    /* Centra verticalmente */
+    max-width: 1100px;
+    /* Un ancho máximo más razonable para el contenido */
     width: 100%;
-    margin: 0 auto; /* Centra el contenedor `initial` en la página */
-    padding: 40px 20px; /* Añadir padding para que el contenido no pegue a los bordes */
-    box-sizing: border-box; /* Incluye padding en el ancho */
-    background-color: #f4f4f4; /* Mueve el color de fondo aquí si `content-initial` no se usa */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    margin: 0 auto;
+    /* Centra el contenedor `initial` en la página */
+    padding: 40px 20px;
+    /* Añadir padding para que el contenido no pegue a los bordes */
+    box-sizing: border-box;
+    /* Incluye padding en el ancho */
+    background-color: #f4f4f4;
+    /* Mueve el color de fondo aquí si `content-initial` no se usa */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en pantallas pequeñas */
 }
 
 .initial p {
@@ -123,31 +136,45 @@ a:hover {
     color: #666;
     margin: 0;
     text-align: center;
-    flex-basis: 100%; /* Por defecto, que ocupen todo el ancho en una columna */
-    padding: 5px 0; /* Espaciado entre ellos */
+    flex-basis: 100%;
+    /* Por defecto, que ocupen todo el ancho en una columna */
+    padding: 5px 0;
+    /* Espaciado entre ellos */
 }
 
 /* Estilos específicos para el H1 dentro de .initial */
 .initial h1 {
-    font-size: 38px; /* Ajusta este tamaño según tu diseño */
+    font-size: 38px;
+    /* Ajusta este tamaño según tu diseño */
     color: #005b96;
-    margin: 10px 0; /* Espacio arriba y abajo del H1 */
+    margin: 10px 0;
+    /* Espacio arriba y abajo del H1 */
     text-align: center;
-    flex-basis: 100%; /* Ocupa todo el ancho */
+    flex-basis: 100%;
+    /* Ocupa todo el ancho */
 }
+
 /* Estilo para el número de teléfono dentro de .initial */
 .initial .phoneline {
-    font-size: 22px; /* Puedes ajustar el tamaño del texto del teléfono */
-    margin-top: 15px; /* Espacio si es necesario */
+    font-size: 22px;
+    /* Puedes ajustar el tamaño del texto del teléfono */
+    margin-top: 15px;
+    /* Espacio si es necesario */
     text-align: center;
-    width: 100%; /* Asegura que ocupe todo el ancho si está en una línea propia */
+    width: 100%;
+    /* Asegura que ocupe todo el ancho si está en una línea propia */
 }
+
 .initial .phoneline i {
-    font-size: 24px; /* Tamaño del icono del teléfono */
-    color: #007bff; /* Color del icono del teléfono */
+    font-size: 24px;
+    /* Tamaño del icono del teléfono */
+    color: #007bff;
+    /* Color del icono del teléfono */
 }
+
 .initial .phoneline a {
-    color: #007bff; /* Color del número de teléfono */
+    color: #007bff;
+    /* Color del número de teléfono */
     font-weight: bold;
 }
 
@@ -157,7 +184,8 @@ a:hover {
     width: 100%;
     height: 2px;
     background-color: #0056b3;
-    margin: 1px 0; /* Ajustado para eliminar margen izquierdo/derecho */
+    margin: 1px 0;
+    /* Ajustado para eliminar margen izquierdo/derecho */
 }
 
 .nav-principal {
@@ -167,9 +195,11 @@ a:hover {
 .nav-bar {
     max-width: 100%;
     display: flex;
-    justify-content: space-between; /* Distribuye elementos a los lados */
+    justify-content: space-between;
+    /* Distribuye elementos a los lados */
     align-items: center;
-    padding: 0 20px; /* Padding a los lados */
+    padding: 0 20px;
+    /* Padding a los lados */
 }
 
 .nav-bar ul {
@@ -201,35 +231,46 @@ a:hover {
 /* Estilos de la navegación (ul, li, a) - reorganizados para claridad */
 .nav-menu {
     list-style: none;
-    padding: 10px 15px; /* Padding interno */
+    padding: 10px 15px;
+    /* Padding interno */
     align-items: center;
-    justify-content: space-around; /* Centra los items con espacio */
-    flex: 1; /* Permite que el menú ocupe el espacio */
+    justify-content: space-around;
+    /* Centra los items con espacio */
+    flex: 1;
+    /* Permite que el menú ocupe el espacio */
     text-align: center;
-    display: flex; /* Asegura que los ítems estén en línea */
+    display: flex;
+    /* Asegura que los ítems estén en línea */
 }
 
 .nav-menu li {
     position: relative;
-    display: flex; /* Para centrar el contenido de cada li */
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
+    display: flex;
+    /* Para centrar el contenido de cada li */
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
 }
 
 .nav-item {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
-    padding: 0; /* Padding ya está en el li a */
-    display: block; /* Para que ocupe todo el espacio del li */
+    padding: 0;
+    /* Padding ya está en el li a */
+    display: block;
+    /* Para que ocupe todo el espacio del li */
 }
 
-.nav-container { /* Redundante con .nav-bar si es el mismo contenedor */
+.nav-container {
+    /* Redundante con .nav-bar si es el mismo contenedor */
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 100%;
-    margin: 20px; /* Revisa si este margen es intencional o si debería ser 0 auto */
+    margin: 20px;
+    /* Revisa si este margen es intencional o si debería ser 0 auto */
     padding: 0 20px;
     width: 100%;
     box-sizing: border-box;
@@ -241,7 +282,8 @@ a:hover {
     margin-left: 0;
 }
 
-.nav-item:hover, .nav-active {
+.nav-item:hover,
+.nav-active {
     color: #ffdd57;
 }
 
@@ -254,27 +296,34 @@ a:hover {
 }
 
 /* Estilos para dropdowns (generalizados) */
-ul.dropdown-content { /* Selectores más específicos para evitar conflictos */
+ul.dropdown-content {
+    /* Selectores más específicos para evitar conflictos */
     display: none;
     position: absolute;
     background-color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     min-width: 160px;
-    top: 100%; /* Asegura que caiga justo debajo del padre */
+    top: 100%;
+    /* Asegura que caiga justo debajo del padre */
     left: 0;
-    list-style: none; /* Asegura que no tenga puntos */
-    padding: 0; /* Elimina padding por defecto */
-    margin: 0; /* Elimina margen por defecto */
+    list-style: none;
+    /* Asegura que no tenga puntos */
+    padding: 0;
+    /* Elimina padding por defecto */
+    margin: 0;
+    /* Elimina margen por defecto */
 }
 
 ul.dropdown-content li {
-    display: block; /* Cada item del dropdown en su propia línea */
+    display: block;
+    /* Cada item del dropdown en su propia línea */
 }
 
 ul.dropdown-content .nav-item {
     color: black;
-    padding: 10px 15px; /* Añade padding para hacer clic más fácil */
+    padding: 10px 15px;
+    /* Añade padding para hacer clic más fácil */
 }
 
 ul.dropdown-content .nav-item:hover {
@@ -292,19 +341,26 @@ ul.dropdown-content .nav-item:hover {
     background-color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    min-width: 160px; /* Añadido para consistencia */
-    top: 100%; /* Añadido para consistencia */
-    left: 0; /* Añadido para consistencia */
-    list-style: none; /* Añadido para consistencia */
-    padding: 0; /* Añadido para consistencia */
-    margin: 0; /* Añadido para consistencia */
+    min-width: 160px;
+    /* Añadido para consistencia */
+    top: 100%;
+    /* Añadido para consistencia */
+    left: 0;
+    /* Añadido para consistencia */
+    list-style: none;
+    /* Añadido para consistencia */
+    padding: 0;
+    /* Añadido para consistencia */
+    margin: 0;
+    /* Añadido para consistencia */
 }
 
 .dropdown-content-blog .nav-item {
     color: black;
     text-decoration: none;
     display: block;
-    padding: 10px 15px; /* Añadido para consistencia */
+    padding: 10px 15px;
+    /* Añadido para consistencia */
 }
 
 .dropdown-content-blog .nav-item:hover {
@@ -325,41 +381,60 @@ ul.dropdown-content .nav-item:hover {
     width: 100%;
     height: 60vh;
     min-height: 400px;
-    margin-bottom: 0; /* ¡Asegura que el slideshow no tenga un margen inferior que empuje el siguiente elemento! */
+    margin-bottom: 0;
+    /* ¡Asegura que el slideshow no tenga un margen inferior que empuje el siguiente elemento! */
 }
 
 .slides-container {
-    display: flex; /* Coloca los slides uno al lado del otro */
-    transition: transform 0.5s ease-in-out; /* Suaviza la transición entre slides */
-    height: 100%; /* ¡Crucial! Ocupa el 100% de la altura de .slideshow */
-    list-style: none; /* Elimina viñetas por defecto del UL */
-    padding: 0;       /* Elimina padding por defecto del UL */
-    margin: 0;        /* Elimina margen por defecto del UL */
+    display: flex;
+    /* Coloca los slides uno al lado del otro */
+    transition: transform 0.5s ease-in-out;
+    /* Suaviza la transición entre slides */
+    height: 100%;
+    /* ¡Crucial! Ocupa el 100% de la altura de .slideshow */
+    list-style: none;
+    /* Elimina viñetas por defecto del UL */
+    padding: 0;
+    /* Elimina padding por defecto del UL */
+    margin: 0;
+    /* Elimina margen por defecto del UL */
 }
 
 .slide {
-    flex: 0 0 100%; /* Cada slide ocupa exactamente el 100% del ancho del contenedor */
-    height: 100%; /* ¡Crucial! Ocupa el 100% de la altura de .slides-container */
-    position: relative; /* Necesario para posicionar el .slide-content de forma absoluta */
+    flex: 0 0 100%;
+    /* Cada slide ocupa exactamente el 100% del ancho del contenedor */
+    height: 100%;
+    /* ¡Crucial! Ocupa el 100% de la altura de .slides-container */
+    position: relative;
+    /* Necesario para posicionar el .slide-content de forma absoluta */
 }
 
 .slide img {
-    width: 100%; /* La imagen ocupa el 100% del ancho de su padre (.slide) */
-    height: 100%; /* ¡CLAVE! La imagen ocupa el 100% de la altura de su padre (.slide) */
-    object-fit: cover; /* Escala la imagen para cubrir el área, recortando si es necesario */
+    width: 100%;
+    /* La imagen ocupa el 100% del ancho de su padre (.slide) */
+    height: 100%;
+    /* ¡CLAVE! La imagen ocupa el 100% de la altura de su padre (.slide) */
+    object-fit: cover;
+    /* Escala la imagen para cubrir el área, recortando si es necesario */
 }
 
 .slide-content {
-    position: absolute; /* Permite posicionarlo sobre la imagen */
+    position: absolute;
+    /* Permite posicionarlo sobre la imagen */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centra el contenido */
+    transform: translate(-50%, -50%);
+    /* Centra el contenido */
     color: white;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-    width: 80%; /* Para que el texto no sea excesivamente ancho */
-    max-width: 800px; /* Limita el ancho máximo del contenido */
-    z-index: 10; /* Asegura que esté por encima de la imagen */
-    text-align: center; /* Centra el texto dentro del contenido */
+    width: 80%;
+    /* Para que el texto no sea excesivamente ancho */
+    max-width: 800px;
+    /* Limita el ancho máximo del contenido */
+    z-index: 10;
+    /* Asegura que esté por encima de la imagen */
+    text-align: center;
+    /* Centra el texto dentro del contenido */
 }
 
 .slide-content h2 {
@@ -378,8 +453,10 @@ ul.dropdown-content .nav-item:hover {
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.5);
     /* MODIFICACIONES AQUÍ: */
-    padding: 4px 8px;   /* Reducido para hacer el botón más pequeño en general */
-    font-size: 12px;    /* Reducido para hacer el texto "Prev" / "Next" más pequeño */
+    padding: 4px 8px;
+    /* Reducido para hacer el botón más pequeño en general */
+    font-size: 12px;
+    /* Reducido para hacer el texto "Prev" / "Next" más pequeño */
     /* --- */
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -387,7 +464,8 @@ ul.dropdown-content .nav-item:hover {
 
 .slides-nav {
     position: absolute;
-    bottom: 80px; /* Ajusta este valor si necesitas más o menos espacio con "Pedir Cita" */
+    bottom: 80px;
+    /* Ajusta este valor si necesitas más o menos espacio con "Pedir Cita" */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -406,28 +484,34 @@ ul.dropdown-content .nav-item:hover {
 
 @media (max-width: 768px) {
     .slideshow {
-        height: 70vh; /* Altura ajustada para móviles */
+        height: 70vh;
+        /* Altura ajustada para móviles */
         min-height: 350px;
     }
+
     .slide-content h2 {
         font-size: 1.8em;
     }
+
     .slide-content h3 {
         font-size: 1.1em;
     }
-   
+
 }
 
- .slides-nav .prev,
-    .slides-nav .next {
-        padding: 4px 8px; /* Hace los botones más pequeños */
-        font-size: 12px;   /* Reduce el tamaño del texto "Prev"/"Next" */
-    }
+.slides-nav .prev,
+.slides-nav .next {
+    padding: 4px 8px;
+    /* Hace los botones más pequeños */
+    font-size: 12px;
+    /* Reduce el tamaño del texto "Prev"/"Next" */
+}
 
-    /* Puedes ajustar también la posición inferior del contenedor de navegación si lo necesitas más arriba o abajo en móvil */
-    .slides-nav {
-        bottom: 40px; /* Por ejemplo, si 80px es demasiado en pantallas pequeñas */
-    }
+/* Puedes ajustar también la posición inferior del contenedor de navegación si lo necesitas más arriba o abajo en móvil */
+.slides-nav {
+    bottom: 40px;
+    /* Por ejemplo, si 80px es demasiado en pantallas pequeñas */
+}
 
 /* Estilos para botones generales */
 .btn {
@@ -438,15 +522,18 @@ ul.dropdown-content .nav-item:hover {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transición para color también */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transición para color también */
 }
 
 .btn:hover {
-    background-color: #0056b3; /* Color de hover para el botón */
+    background-color: #0056b3;
+    /* Color de hover para el botón */
     color: #f7f016;
 }
 
-.btn-text { /* Esto parece redundante si .btn ya lo hace, ¿se usa en otro lado? */
+.btn-text {
+    /* Esto parece redundante si .btn ya lo hace, ¿se usa en otro lado? */
     background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
@@ -457,25 +544,31 @@ ul.dropdown-content .nav-item:hover {
 
 .midpage-container {
     text-align: center;
-    padding: 0px; /* Ya lo tienes en 0, lo cual está bien */
+    padding: 0px;
+    /* Ya lo tienes en 0, lo cual está bien */
     /* Añadimos un margen superior explícito a 0 para sobrescribir cualquier estilo por defecto o heredado */
-    margin-top: 0; 
+    margin-top: 0;
 }
 
 .midpage-header h3 {
     font-size: 36px;
     color: #005b96;
-    margin-top: 0; /* ¡Importante! Elimina el margen superior por defecto de los h3 */
-    margin-bottom: 0px; 
+    margin-top: 0;
+    /* ¡Importante! Elimina el margen superior por defecto de los h3 */
+    margin-bottom: 0px;
 }
 
 .paragraph p {
     /* Tu CSS actual: margin: 0px auto; esto es abreviado para 0px arriba/abajo y auto a los lados. */
     /* Lo cambiamos a solo horizontalmente para evitar que añada espacio vertical. */
-    margin-left: auto;   /* Centra horizontalmente */
-    margin-right: auto;  /* Centra horizontalmente */
-    margin-top: 0;       /* ¡Importante! Elimina el margen superior por defecto del párrafo */
-    margin-bottom: 0;    /* Elimina el margen inferior por defecto del párrafo si no se necesita */
+    margin-left: auto;
+    /* Centra horizontalmente */
+    margin-right: auto;
+    /* Centra horizontalmente */
+    margin-top: 0;
+    /* ¡Importante! Elimina el margen superior por defecto del párrafo */
+    margin-bottom: 0;
+    /* Elimina el margen inferior por defecto del párrafo si no se necesita */
     padding: 0;
     color: #666666;
     max-width: 800px;
@@ -485,7 +578,7 @@ ul.dropdown-content .nav-item:hover {
 
 .cases-container {
     max-width: 1268.8px;
-   
+
 }
 
 .section-title {
@@ -496,15 +589,16 @@ ul.dropdown-content .nav-item:hover {
 }
 
 .caseslist {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan */
 
 }
 
 .h2-especialidad {
-    font-size: 28px; 
+    font-size: 28px;
     color: #005B96;
 }
 
@@ -512,11 +606,13 @@ ul.dropdown-content .nav-item:hover {
     padding: 0px;
     border-radius: 10px;
     flex: 1;
-    min-width: 300px; /* Ajusta el ancho mínimo antes de envolver */
+    min-width: 300px;
+    /* Ajusta el ancho mínimo antes de envolver */
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; /* Para los ítems de la lista */
+    text-align: center;
+    /* Para los ítems de la lista */
 }
 
 .caseslist-cases .fa-ul {
@@ -545,18 +641,24 @@ ul.dropdown-content .nav-item:hover {
     color: #005b96;
     text-decoration: none;
     font-size: 20px;
-    white-space: nowrap;   /* ¡CLAVE! Evita que el texto se rompa en múltiples líneas */
-    overflow: hidden;      /* Oculta el texto que excede el ancho del contenedor */
-    text-overflow: ellipsis; /* Añade puntos suspensivos (...) al final si el texto es muy largo */
-    display: block;        /* Asegura que el enlace se comporte como un bloque para que overflow funcione */
-    max-width: 100%;       /* Opcional: Asegura que no se expanda más allá de su padre */
+    white-space: nowrap;
+    /* ¡CLAVE! Evita que el texto se rompa en múltiples líneas */
+    overflow: hidden;
+    /* Oculta el texto que excede el ancho del contenedor */
+    text-overflow: ellipsis;
+    /* Añade puntos suspensivos (...) al final si el texto es muy largo */
+    display: block;
+    /* Asegura que el enlace se comporte como un bloque para que overflow funcione */
+    max-width: 100%;
+    /* Opcional: Asegura que no se expanda más allá de su padre */
 }
 
 .polettiphoto {
     flex: 1;
-    min-width: 300px; /* Ajusta el ancho mínimo antes de envolver */
+    min-width: 300px;
+    /* Ajusta el ancho mínimo antes de envolver */
     display: flex;
-    justify-content:left;
+    justify-content: left;
     align-items: center;
 }
 
@@ -586,16 +688,20 @@ ul.dropdown-content .nav-item:hover {
     margin-top: 0px;
     margin-bottom: 20px;
     display: flex;
-    justify-content: center; /* Centra los enlaces del mapa */
-    flex-wrap: wrap; /* Permite que los enlaces se envuelvan */
+    justify-content: center;
+    /* Centra los enlaces del mapa */
+    flex-wrap: wrap;
+    /* Permite que los enlaces se envuelvan */
 }
 
 .maps a {
     text-decoration: none;
     color: #545353;
     font-size: 18px;
-    padding: 10px 20px; /* Ajusta el padding para un mejor click */
-    display: flex; /* Alinea icono y texto */
+    padding: 10px 20px;
+    /* Ajusta el padding para un mejor click */
+    display: flex;
+    /* Alinea icono y texto */
     align-items: center;
 }
 
@@ -634,8 +740,13 @@ ul.dropdown-content .nav-item:hover {
 }
 
 @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-210px * 9)); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-210px * 9));
+    }
 }
 
 
@@ -645,7 +756,8 @@ ul.dropdown-content .nav-item:hover {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #06026b; /* Añadir un color de fondo para la sección final si es diferente al footer */
+    background-color: #06026b;
+    /* Añadir un color de fondo para la sección final si es diferente al footer */
 }
 
 .custom-columns {
@@ -655,25 +767,36 @@ ul.dropdown-content .nav-item:hover {
     max-width: 1200px;
     width: 100%;
     gap: 100px;
-    color: #fff; /* Cambiado a blanco para contraste con fondo oscuro */
+    color: #fff;
+    /* Cambiado a blanco para contraste con fondo oscuro */
     font-size: 20px;
-    flex-wrap: wrap; /* Permite el ajuste en móviles */
+    flex-wrap: wrap;
+    /* Permite el ajuste en móviles */
 }
 
-.custom-columns .column { /* Si tienes un div.column específico */
-    flex: 1; /* Permite que la columna crezca */
-    min-width: 280px; /* Ancho mínimo para la columna antes de envolver */
-    text-align: left; /* Alinea el texto a la izquierda dentro de la columna */
+.custom-columns .column {
+    /* Si tienes un div.column específico */
+    flex: 1;
+    /* Permite que la columna crezca */
+    min-width: 280px;
+    /* Ancho mínimo para la columna antes de envolver */
+    text-align: left;
+    /* Alinea el texto a la izquierda dentro de la columna */
 }
 
-.final-container p { /* Estilos para los párrafos dentro de final-container, incluyendo la dirección */
+.final-container p {
+    /* Estilos para los párrafos dentro de final-container, incluyendo la dirección */
     margin: 0;
-    padding: 5px 0; /* Un poco de padding */
-    text-align: left; /* Alineación del texto de dirección */
-    color: #fff; /* Color para los párrafos en esta sección */
+    padding: 5px 0;
+    /* Un poco de padding */
+    text-align: left;
+    /* Alineación del texto de dirección */
+    color: #fff;
+    /* Color para los párrafos en esta sección */
 }
 
-.final-container a { /* Estilos de enlace específicos para el final-container */
+.final-container a {
+    /* Estilos de enlace específicos para el final-container */
     color: #fff;
     text-decoration: none;
 }
@@ -698,7 +821,8 @@ ul.dropdown-content .nav-item:hover {
 /* Mobile Nav Toggle (Hamburguesa) - Asegúrate de que el HTML tenga estos elementos */
 #mobile-nav-toggle,
 .nav-branding {
-    display: none; /* Oculto por defecto */
+    display: none;
+    /* Oculto por defecto */
 }
 
 footer {
@@ -723,7 +847,8 @@ footer img {
     margin-left: 5px;
 }
 
-footer a { /* Ya tenemos estilos de a globales y para final-container, considerar si este es redundante */
+footer a {
+    /* Ya tenemos estilos de a globales y para final-container, considerar si este es redundante */
     color: #005b9f;
     text-decoration: none;
 }
@@ -737,6 +862,7 @@ html {
 }
 
 @media (max-width: 768px) {
+
     /* Flags */
     .sections-stack .content.flags {
         gap: 20px;
@@ -746,25 +872,33 @@ html {
     .initial {
         flex-direction: column;
         align-items: center;
-        padding: 20px; /* Reduce padding en móvil */
+        padding: 20px;
+        /* Reduce padding en móvil */
     }
-     .initial h1 {
-        font-size: 28px; /* Este es el tamaño para móvil */
-        margin-bottom: 5px; /* Y este el margen */
+
+    .initial h1 {
+        font-size: 28px;
+        /* Este es el tamaño para móvil */
+        margin-bottom: 5px;
+        /* Y este el margen */
     }
-    
+
     .initial p {
-        font-size: 18px; /* Ajusta párrafos para móvil */
+        font-size: 18px;
+        /* Ajusta párrafos para móvil */
         padding: 2px 0;
     }
+
     .phoneline {
         margin-top: 10px;
         text-align: center;
         font-size: 14px;
     }
+
     .phoneline i {
         font-size: 16px;
     }
+
     .phoneline a {
         font-size: 18px;
     }
@@ -772,103 +906,142 @@ html {
     /* Social Icons */
     .social-icons {
         flex-wrap: wrap;
-        gap: 20px; /* Reduce gap */
+        gap: 20px;
+        /* Reduce gap */
     }
+
     .social-icons div {
         flex-direction: column;
         align-items: center;
     }
+
     .social-icons i {
         font-size: 40px;
         line-height: 1;
     }
-    .inst-text, .linkedin-text {
+
+    .inst-text,
+    .linkedin-text {
         margin-top: 5px;
-        text-align: center; /* Centrar en móvil */
+        text-align: center;
+        /* Centrar en móvil */
         font-size: 12px;
         white-space: nowrap;
         display: block;
         line-height: 1.2;
-        margin-left: 0; /* Elimina el margen negativo si ya se centra */
+        margin-left: 0;
+        /* Elimina el margen negativo si ya se centra */
     }
 
     /* Navigation */
     .nav-bar {
         padding: 0;
     }
+
     .nav-container {
         padding: 0;
     }
+
     .nav-menu {
-        flex-direction: row; /* Mantener fila para ahora, pero revisar diseño móvil */
+        flex-direction: row;
+        /* Mantener fila para ahora, pero revisar diseño móvil */
         flex-wrap: wrap;
         align-items: flex-start;
-        justify-content: center; /* Centra los items si se envuelven */
+        justify-content: center;
+        /* Centra los items si se envuelven */
     }
-    .nav-menu > li {
-        width: 33.33%; /* Tres columnas */
+
+    .nav-menu>li {
+        width: 33.33%;
+        /* Tres columnas */
         text-align: center;
-        margin-right: 0; /* Elimina margen derecho si usas width % */
+        margin-right: 0;
+        /* Elimina margen derecho si usas width % */
     }
-    .nav-menu > li:nth-child(n+4) {
-        width: 50%; /* Dos columnas para los que se pasan */
+
+    .nav-menu>li:nth-child(n+4) {
+        width: 50%;
+        /* Dos columnas para los que se pasan */
     }
-    .nav-menu > li a {
-        padding: 10px 5px; /* Ajusta padding */
-        font-size: 16px; /* Ajusta tamaño de fuente */
+
+    .nav-menu>li a {
+        padding: 10px 5px;
+        /* Ajusta padding */
+        font-size: 16px;
+        /* Ajusta tamaño de fuente */
     }
 
     /* Slideshow */
     .slideshow {
         height: 70vh;
-        min-height: 350px; /* Ajusta altura mínima para móviles */
+        min-height: 350px;
+        /* Ajusta altura mínima para móviles */
     }
-   
-    .slide-content h2 { /* Títulos del slide en móvil */
+
+    .slide-content h2 {
+        /* Títulos del slide en móvil */
         font-size: 1.8em;
     }
-    .slide-content h3 { /* Subtítulos del slide en móvil */
+
+    .slide-content h3 {
+        /* Subtítulos del slide en móvil */
         font-size: 1.1em;
     }
+
     .slides-nav {
-        bottom: 40px; /* Ajusta posición de navegación del slide */
+        bottom: 40px;
+        /* Ajusta posición de navegación del slide */
     }
+
     .slides-nav a {
-        padding: 8px 15px; /* Botones más pequeños */
+        padding: 8px 15px;
+        /* Botones más pequeños */
         font-size: 0.9em;
     }
 
     .h2-especialidad {
-        font-size: 24px; /* O el tamaño que desees para móvil, a menudo un poco más pequeño */
-        color: #005B96; /* Mantén el mismo color, o cámbialo si quieres */
+        font-size: 24px;
+        /* O el tamaño que desees para móvil, a menudo un poco más pequeño */
+        color: #005B96;
+        /* Mantén el mismo color, o cámbialo si quieres */
     }
 
     /* Midpage */
     .midpage-header h3 {
-        font-size: 28px; /* Ajusta para móvil */
+        font-size: 28px;
+        /* Ajusta para móvil */
     }
+
     .paragraph p {
-        font-size: 18px; /* Ajusta para móvil */
-      
+        font-size: 18px;
+        /* Ajusta para móvil */
+
     }
 
     /* Cases and Procedures */
     .caseslist {
         flex-direction: column;
         align-items: center;
-        
+
     }
-    .caseslist-cases, .polettiphoto {
+
+    .caseslist-cases,
+    .polettiphoto {
         margin-bottom: 20px;
-        min-width: unset; /* Elimina el min-width para que se ajuste */
+        min-width: unset;
+        /* Elimina el min-width para que se ajuste */
     }
+
     .caseslist-cases .fa-ul li {
-        padding-left: 0; /* Centra completamente los ítems en móvil */
+        padding-left: 0;
+        /* Centra completamente los ítems en móvil */
         justify-content: center;
     }
+
     .caseslist-cases .fa-ul li a {
         font-size: 18px;
     }
+
     .polettiphoto {
         margin-bottom: 0;
     }
@@ -878,32 +1051,218 @@ html {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 15px; /* Reduce gap */
+        gap: 15px;
+        /* Reduce gap */
     }
+
     .custom-columns .column {
-        min-width: unset; /* Elimina el min-width */
-        text-align: center; /* Centra el texto */
+        min-width: unset;
+        /* Elimina el min-width */
+        text-align: center;
+        /* Centra el texto */
     }
 
     /* Footer */
     footer p {
-        display: block; /* Cada elemento en su propia línea */
+        display: block;
+        /* Cada elemento en su propia línea */
         margin-bottom: 5px;
     }
+
     footer .separator {
-        display: none; /* Oculta separador en móvil si los items están apilados */
+        display: none;
+        /* Oculta separador en móvil si los items están apilados */
     }
 
     /* Mobile Nav Toggle (Hamburguesa) - Muestra en móvil */
     #mobile-nav-toggle,
     .nav-branding {
-        display: block; /* Mostrar el botón de hamburguesa y logo si existen en HTML */
+        display: block;
+        /* Mostrar el botón de hamburguesa y logo si existen en HTML */
     }
 }
 
 @media (max-width: 480px) {
+
     /* Ajustes adicionales para pantallas aún más pequeñas si es necesario */
     .custom-columns {
         font-size: 16px;
+    }
+}
+
+/* --- CONFIGURACIÓN BASE (Móvil por defecto) --- */
+.direccion-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrado en móvil */
+    text-align: center;
+    width: 100%;
+}
+
+.linea-unica {
+    display: block !important;
+    white-space: normal !important;
+    /* PERMITE SALTO EN MÓVIL para que no se corte */
+    font-size: 16px !important;
+    margin-bottom: 12px !important;
+    line-height: 1.4;
+    color: white;
+}
+
+.linea-unica i {
+    margin-right: 8px;
+    color: #fff;
+}
+
+/* --- AJUSTE PARA PC (Pantallas grandes) --- */
+@media (min-width: 992px) {
+    .custom-columns {
+        display: flex !important;
+        justify-content: center !important;
+        /* CENTRA EL BLOQUE ENTERO */
+        gap: 60px !important;
+        /* Espacio entre teléfono y direcciones */
+        flex-wrap: nowrap !important;
+        width: 100% !important;
+    }
+
+    .direccion-footer {
+        align-items: flex-start;
+        /* Alinea texto a la izquierda dentro del bloque centrado */
+        text-align: left;
+        width: auto;
+        min-width: 550px;
+        /* Espacio suficiente para que Marbella quepa en una línea */
+    }
+
+    .linea-unica {
+        white-space: nowrap !important;
+        /* FUERZA UNA SOLA LÍNEA EN PC */
+        font-size: 17px !important;
+        /* Un pelín más grande para legibilidad */
+        margin-bottom: 8px !important;
+    }
+}
+
+/* Contenedor principal horizontal */
+.phoneline-container-horizontal {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    /* MÁS SEPARACIÓN EN PC: Subimos a 60px */
+    gap: 60px;
+    width: 100%;
+    flex-wrap: nowrap !important;
+    margin: 20px 0;
+}
+
+.phone-city {
+    display: flex !important;
+    align-items: center;
+    white-space: nowrap;
+}
+
+/* ICONOS MÁS PEQUEÑOS Y AZULES */
+.phone-city i {
+    margin-right: 8px;
+    color: #007bff;
+    /* Tu azul característico */
+    font-size: 14px !important;
+    /* Icono más pequeño */
+}
+
+.phone-city a {
+    font-size: 19px;
+    font-weight: bold;
+    color: #007bff;
+    /* Texto también en azul */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.phone-city a:hover {
+    opacity: 0.7;
+}
+
+/* --- AJUSTE PARA MÓVIL --- */
+@media (max-width: 768px) {
+    .phoneline-container-horizontal {
+        /* Menos espacio en móvil para que sigan entrando en una línea */
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .phone-city a {
+        font-size: 14px !important;
+    }
+
+    .phone-city i {
+        font-size: 11px !important;
+        /* Icono aún más pequeño en móvil */
+        margin-right: 4px;
+    }
+}
+
+/* PC: Escondemos el botón de hamburguesa por defecto */
+#hamburguesa {
+    display: none;
+}
+
+/* CONFIGURACIÓN PARA MÓVIL */
+@media (max-width: 768px) {
+    .nav-container {
+        display: flex !important;
+        justify-content: center !important;
+        /* Mueve la hamburguesa a la derecha */
+        position: relative;
+        padding: 10px 20px !important;
+    }
+
+    #hamburguesa {
+        display: block !important;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 10001;
+    }
+
+    .nav-menu {
+        display: none !important;
+        /* Oculto por defecto */
+        flex-direction: column;
+        position: absolute !important;
+        top: 100% !important;
+        /* Aparece justo debajo de la barra azul */
+        left: 0 !important;
+        width: 100% !important;
+        background-color: #004a99 !important;
+        /* Azul oscuro coincidente */
+        list-style: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        z-index: 10000 !important;
+    }
+
+    /* Esta clase es la que activa el JavaScript al hacer clic */
+    .nav-menu.abierto {
+        display: flex !important;
+    }
+
+    .nav-menu li {
+        width: 100% !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: block !important;
+    }
+
+    .nav-menu li a {
+        display: block !important;
+        padding: 15px 20px !important;
+        color: white !important;
+        text-align: center !important;
+        /* Texto centrado como en tu diseño */
+        width: 100%;
+        text-decoration: none;
     }
 }
