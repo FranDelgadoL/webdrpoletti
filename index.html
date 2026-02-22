@@ -11,9 +11,9 @@
 
     <meta name="robots" content="index, follow">
     <meta name="author" content="Fran Delgado, .gas. developers">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; 
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; 
                 font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; script-src 'self' https://cdnjs.cloudflare.com; connect-src 'self'; 
-                img-src 'self' https://img.icons8.com;">
+                img-src 'self' data: https://img.icons8.com;">
 
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
@@ -29,7 +29,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <link rel="stylesheet" type="text/css" href="stylesheetfp.css">
+    <link rel="stylesheet" href="stylesheetfp.css?v=1.2">
 
     <link rel="canonical" href="https://drpoletti.com/" />
     <link rel="alternate" hreflang="es" href="https://drpoletti.com/" />
@@ -143,8 +143,7 @@
             <p data-key="sports-medicine">Medicina deportiva y ortobiología</p>
         </div>
         <div>
-            <h1 data-key="doctor-title">Dr. Fabián Poletti: Traumatólogo en Marbella y Estepona Especializado en Rodilla
-                y Cadera</h1>
+            <h1 data-key="doctor-title">Dr. Fabián Poletti: Cirujano ortopédico y traumatólogo</h1>
         </div>
         <div>
 
@@ -205,7 +204,7 @@
     <div class="slideshow">
                      <ul class="slides-container">
                             <li class="slide">
-                                    <img class="slide-image" src="../images/futbol2.webp"
+                                    <img class="slide-image" src="images/futbol2.webp"
                     alt="Imagen de Lesiones Deportivas">
                                     <div class="slide-content">
                                                                     <h2 data-key="sports-injuries-title">Lesiones
@@ -217,7 +216,7 @@
                                         </div>
                                 </li>
                             <li class="slide">
-                                    <img class="slide-image" src="../images/golf2.webp"
+                                    <img class="slide-image" src="images/golf2.webp"
                     alt="Imagen de Lesiones Deportivas">
                                     <div class="slide-content">
                                                                     <h2 data-key="knee-hip-osteoarthritis-title">
@@ -229,7 +228,7 @@
                                         </div>
                                 </li>
                             <li class="slide">
-                                    <img src="../images/polettioperando1.webp" alt="Imagen de Poletti Operando">
+                                    <img src="images/polettioperando1.webp" alt="Imagen de Poletti Operando">
                                     <div class="slide-content">
                                                                     <h2 data-key="acl-reconstruction-title">
                         Reconstrucción del Ligamento Cruzado Anterior</h2>
@@ -241,7 +240,7 @@
                                         </div>
                                 </li>
                             <li class="slide">
-                                    <img src="../images/danza2.webp" alt="Imagen de Procedimientos Innovadores">
+                                    <img src="images/danza2.webp" alt="Imagen de Procedimientos Innovadores">
                                     <div class="slide-content">
                                                                     <h2 data-key="innovative-procedures-title">
                         Procedimientos innovadores</h2>
@@ -252,7 +251,7 @@
                                         </div>
                                 </li>
                             <li class="slide">
-                <img src="../images/fabianpoletti-traumatologo2.webp" alt="Imagen del Dr. Fabian Poletti">
+                <img src="images/fabianpoletti-traumatologo2.webp" alt="Imagen del Dr. Fabian Poletti">
                 <div class="slide-content">
                     <h2 data-key="dr-poletti-profile-title">El Dr. Poletti: Su Traumatólogo de Confianza</h2>
                     <h3 data-key="dr-poletti-profile-subtitle">Conozca la trayectoria y experiencia que le avala.</h3>
@@ -378,7 +377,7 @@
             <div class="column">
                 <p class="text-info lead text-left">
                     <strong><i class="fas fa-phone"></i> &nbsp; <a href="tel:34952760600" class="phoneline white"
-                            data-key="phone-number">+34 952 86 1400</a></strong>
+                            data-key="phone-number">Marbella - Hospital Ochoa: +34 952 86 1400</a></strong>
                 </p>
                 <p class="text-info text-left">
                     <i class="far fa-envelope"></i> &nbsp; <a href="mailto:fabian.poletti@hospitalochoa.com"
@@ -405,7 +404,8 @@
                         <p class="linea-unica">
                             <a href="https://www.google.com/maps/search/?api=1&query=The+Clinic+Gibraltar+45+Irish+Town"
                                 target="_blank">
-                                <i class="fas fa-map-marker-alt"></i> <strong>Gibraltar:</strong> The Clinic - 45 Irish
+                                <i class="fas fa-map-marker-alt"></i> <strong>Gibraltar:</strong> The Clinic at 45 Irish
+                                Town- 45 Irish
                                 Town - GX11 1AA
                             </a>
                             <span class="tel-inline">
@@ -431,7 +431,7 @@
         </p>
     </footer>
 
-    <script src="scriptfp.js" defer></script>
+    <script src="scriptfp.js?v=1.2" defer></script>
 
 
 </body>
