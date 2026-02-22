@@ -1266,3 +1266,36 @@ html {
         text-decoration: none;
     }
 }
+
+/* Corrección específica para el submenú en versión móvil */
+@media (max-width: 768px) {
+
+    /* 1. Fondo del recuadro del submenú */
+    .dropdown-content {
+        background-color: #ffffff !important;
+        /* Forzamos fondo blanco */
+        position: relative !important;
+        /* Lo hace fluir dentro del menú azul */
+        width: 100%;
+        padding: 0;
+    }
+
+    /* 2. TEXTO DEL SUBMENÚ: Aquí es donde cambiamos el color a oscuro */
+    .dropdown-content li a.nav-item {
+        color: #004a99 !important;
+        /* Azul oscuro para que se vea sobre el blanco */
+        background-color: #ffffff !important;
+        padding: 15px 30px !important;
+        /* Un poco más de sangría para que se note que es submenú */
+        border-bottom: 1px solid #eeeeee !important;
+        display: block;
+        width: 100%;
+    }
+
+    /* 3. Efecto al tocar la opción */
+    .dropdown-content li a.nav-item:active,
+    .dropdown-content li a.nav-item:hover {
+        background-color: #f1f1f1 !important;
+        color: #007bff !important;
+    }
+}

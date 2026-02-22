@@ -3,10 +3,11 @@ console.log("scriptfp.js cargado correctamente");
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    // === 1. MENÚ MÓVIL (Tu código con cambio de icono) ===
-    var boton = document.getElementById('hamburguesa');
-    var menu = document.getElementById('menu-lista');
+    // === 1. VARIABLES GLOBALES DE ELEMENTOS ===
+    const boton = document.getElementById('hamburguesa');
+    const menu = document.getElementById('menu-lista');
 
+    // === 2. MENÚ MÓVIL (Toggle abrir/cerrar) ===
     if (boton && menu) {
         boton.addEventListener('click', function (e) {
             e.preventDefault();
@@ -22,18 +23,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // === 2. DROPDOWN INFORMACIÓN PACIENTE ===
+    // === 3. DROPDOWN INFORMACIÓN PACIENTE ===
     const paciente = document.querySelector('.nav-item.parent[data-key="patient-info"]');
     const pacienteDropdown = paciente ? paciente.nextElementSibling : null;
 
     if (paciente && pacienteDropdown) {
         paciente.addEventListener('click', function (e) {
             e.preventDefault();
-            pacienteDropdown.style.display = (pacienteDropdown.style.display === 'block') ? 'none' : 'block';
+            // Si está oculto lo ponemos en flex, si no, lo ocultamos
+            pacienteDropdown.style.display = (pacienteDropdown.style.display === 'flex') ? 'none' : 'flex';
+            pacienteDropdown.style.flexDirection = 'column'; // Asegura que los items caigan uno bajo otro
         });
     }
 
-    // === 3. SLIDESHOW ===
+    // === 4. SLIDESHOW ===
     const slides = document.querySelectorAll('.slide');
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
@@ -66,12 +69,37 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // === 4. IDIOMAS (Solo translations.json) ===
+    // === 5. SCROLL SUAVE Y CIERRE DE MENÚ (Procedimientos) ===
+    const procedimientosLink = document.querySelector('a[href="#casos-y-procedimientos"]');
+
+    if (procedimientosLink) {
+        procedimientosLink.addEventListener('click', function (e) {
+            e.preventDefault(); // Evita el salto brusco siempre
+
+            // 1. Si el menú móvil está abierto, lo cerramos
+            if (menu && menu.classList.contains('abierto')) {
+                menu.classList.remove('abierto');
+                const icono = boton ? boton.querySelector('i') : null;
+                if (icono) {
+                    icono.classList.remove('fa-times');
+                    icono.classList.add('fa-bars');
+                }
+            }
+
+            // 2. Ejecutamos el scroll suave
+            const destino = document.getElementById('casos-y-procedimientos');
+            if (destino) {
+                destino.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+
+    // === 6. IDIOMAS (Configuración de rutas) ===
     const linksByLanguage = {
         es: {
             about: "pages/sobre-poletti.html",
             firstvisit: "pages/primeravisita.html",
-            curriculum: "pages/curriculum.html", // Agregado para consistencia
+            curriculum: "pages/curriculum.html",
             sportsMedicine: "casos_clinicos/medicina-deportiva.html",
             kneeArthroscopy: "casos_clinicos/artroscopia-de-rodilla.html",
             kneeLigamentReconstruction: "casos_clinicos/reconstruccion-ligamentos-rodilla.html",
@@ -132,7 +160,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelectorAll('[data-key]').forEach(element => {
                     const key = element.getAttribute('data-key');
                     if (translations[language] && translations[language][key]) {
-                        // Si es una imagen (bandera), no cambiamos el texto
                         if (element.tagName !== 'IMG') {
                             element.textContent = translations[language][key];
                         }
@@ -167,13 +194,4 @@ document.addEventListener("DOMContentLoaded", function () {
     loadTranslations(initialLang);
     updateNavigationLinks(initialLang);
 
-    // === 5. SCROLL SUAVE ===
-    const scrollLink = document.querySelector('a[href="#casos-y-procedimientos"]');
-    if (scrollLink) {
-        scrollLink.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector('#casos-y-procedimientos');
-            if (target) target.scrollIntoView({ behavior: 'smooth' });
-        });
-    }
-});
+}); // <--- AQUÍ CIERRA TODO CORRECTAMENTE
