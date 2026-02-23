@@ -381,6 +381,7 @@ ul.dropdown-content .nav-item:hover {
     height: 60vh;
     min-height: 400px;
     margin-bottom: 0;
+    margin-top: 0 !important;
     /* ¡Asegura que el slideshow no tenga un margen inferior que empuje el siguiente elemento! */
 }
 
@@ -856,9 +857,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
 @media (max-width: 768px) {
 
@@ -935,6 +933,7 @@ html {
     /* Navigation */
     .nav-bar {
         padding: 0;
+        margin-bottom: 0 !important;
     }
 
     .nav-container {

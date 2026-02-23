@@ -69,18 +69,49 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // === 5. SCROLL SUAVE UNIVERSAL (Optimizado para Móviles Reales) ===
-    // Buscamos cualquier enlace que termine exactamente en #casos-y-procedimientos
-    document.querySelectorAll('a[href*="#casos-y-procedimientos"]').forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.getElementById("casos-y-procedimientos");
-            if (target) {
-                target.scrollIntoView({ behavior: "smooth" });
-            }
-        });
-    });
+    // === 5. SCROLL SUAVE (SOLUCIÓN PARA MÓVIL FÍSICO) ===
+    const procedimientosLink = document.querySelector('a[data-key="procedures"]');
 
+    if (procedimientosLink) {
+        const ejecutarScroll = function (e) {
+            const targetElement = document.getElementById("casos-y-procedimientos");
+            if (targetElement) {
+                // Detenemos al navegador completamente
+                e.preventDefault();
+                e.stopPropagation();
+
+                // 1. Cerrar menú móvil
+                if (menu && menu.classList.contains('abierto')) {
+                    menu.classList.remove('abierto');
+                    const icono = boton ? boton.querySelector('i') : null;
+                    if (icono) {
+                        icono.classList.remove('fa-times');
+                        icono.classList.add('fa-bars');
+                    }
+                }
+
+                // 2. Scroll manual (más fiable en móviles que scrollIntoView)
+                setTimeout(() => {
+                    const headerOffset = 80; // Ajuste para que el menú no tape el título
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }, 100);
+            }
+        };
+
+        // Para PC
+        procedimientosLink.addEventListener('click', ejecutarScroll);
+
+        // Para Móvil Físico (el secreto está en el passive: false)
+        procedimientosLink.addEventListener('touchstart', function (e) {
+            ejecutarScroll(e);
+        }, { passive: false });
+    }
     // === 6. IDIOMAS (Configuración de rutas) ===
     const linksByLanguage = {
         es: {
