@@ -1299,3 +1299,13 @@ html {
         color: #007bff !important;
     }
 }
+
+/* Los puntos indican que el elemento debe tener TODAS esas clases */
+.text-info.lead.text-left {
+    font-size: 16px !important;
+}
+
+/* También es recomendable igualar el tamaño del enlace del email */
+.text-info.text-left a {
+    font-size: 16px !important;
+}

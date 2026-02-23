@@ -71,42 +71,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // === 5. SCROLL SUAVE UNIVERSAL (Optimizado para Móviles Reales) ===
     // Buscamos cualquier enlace que termine exactamente en #casos-y-procedimientos
-    const procedimientosLink = document.querySelector('a[href$="#casos-y-procedimientos"]');
+    const procedimientosLink = document.querySelector('a[href*="#casos-y-procedimientos"]');
 
     if (procedimientosLink) {
-        const ejecutarScroll = function (e) {
-            // Verificamos si el ID existe en la página donde está parado el usuario
-            const targetId = "casos-y-procedimientos";
-            const targetElement = document.getElementById(targetId);
 
-            if (targetElement) {
-                e.preventDefault();
-                e.stopPropagation(); // Evita interferencias de otros scripts
+        procedimientosLink.addEventListener('click', function (e) {
 
-                // 1. Cerrar el menú si está abierto
-                if (menu && menu.classList.contains('abierto')) {
-                    menu.classList.remove('abierto');
-                    const icono = boton ? boton.querySelector('i') : null;
-                    if (icono) {
-                        icono.classList.remove('fa-times');
-                        icono.classList.add('fa-bars');
-                    }
-                }
+            e.preventDefault();
 
-                // 2. Ejecutar el scroll con un mini-retraso
-                // Esto ayuda a que el móvil procese el cierre del menú antes de moverse
+            const targetElement = document.getElementById("casos-y-procedimientos");
+
+            if (!targetElement) return;
+
+            if (menu && menu.classList.contains('abierto')) {
+
+                menu.classList.remove('abierto');
+
+                // Esperar exactamente lo que dura la transición
                 setTimeout(() => {
                     targetElement.scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'
                     });
-                }, 150);
-            }
-        };
+                }, 320); // un poco más que 0.3s
 
-        // Escuchamos ambos eventos para máxima compatibilidad
-        procedimientosLink.addEventListener('click', ejecutarScroll);
-        procedimientosLink.addEventListener('touchstart', ejecutarScroll, { passive: false });
+            } else {
+
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+
+            }
+
+        });
+
     }
 
     // === 6. IDIOMAS (Configuración de rutas) ===
