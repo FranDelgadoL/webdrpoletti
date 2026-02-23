@@ -69,29 +69,44 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // === 5. SCROLL SUAVE Y CIERRE DE MENÚ (Procedimientos) ===
-    const procedimientosLink = document.querySelector('a[href="#casos-y-procedimientos"]');
+    // === 5. SCROLL SUAVE UNIVERSAL (Optimizado para Móviles Reales) ===
+    // Buscamos cualquier enlace que termine exactamente en #casos-y-procedimientos
+    const procedimientosLink = document.querySelector('a[href$="#casos-y-procedimientos"]');
 
     if (procedimientosLink) {
-        procedimientosLink.addEventListener('click', function (e) {
-            e.preventDefault(); // Evita el salto brusco siempre
+        const ejecutarScroll = function (e) {
+            // Verificamos si el ID existe en la página donde está parado el usuario
+            const targetId = "casos-y-procedimientos";
+            const targetElement = document.getElementById(targetId);
 
-            // 1. Si el menú móvil está abierto, lo cerramos
-            if (menu && menu.classList.contains('abierto')) {
-                menu.classList.remove('abierto');
-                const icono = boton ? boton.querySelector('i') : null;
-                if (icono) {
-                    icono.classList.remove('fa-times');
-                    icono.classList.add('fa-bars');
+            if (targetElement) {
+                e.preventDefault();
+                e.stopPropagation(); // Evita interferencias de otros scripts
+
+                // 1. Cerrar el menú si está abierto
+                if (menu && menu.classList.contains('abierto')) {
+                    menu.classList.remove('abierto');
+                    const icono = boton ? boton.querySelector('i') : null;
+                    if (icono) {
+                        icono.classList.remove('fa-times');
+                        icono.classList.add('fa-bars');
+                    }
                 }
-            }
 
-            // 2. Ejecutamos el scroll suave
-            const destino = document.getElementById('casos-y-procedimientos');
-            if (destino) {
-                destino.scrollIntoView({ behavior: 'smooth' });
+                // 2. Ejecutar el scroll con un mini-retraso
+                // Esto ayuda a que el móvil procese el cierre del menú antes de moverse
+                setTimeout(() => {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }, 150);
             }
-        });
+        };
+
+        // Escuchamos ambos eventos para máxima compatibilidad
+        procedimientosLink.addEventListener('click', ejecutarScroll);
+        procedimientosLink.addEventListener('touchstart', ejecutarScroll, { passive: false });
     }
 
     // === 6. IDIOMAS (Configuración de rutas) ===
