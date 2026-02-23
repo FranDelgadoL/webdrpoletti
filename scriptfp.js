@@ -71,42 +71,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // === 5. SCROLL SUAVE UNIVERSAL (Optimizado para Móviles Reales) ===
     // Buscamos cualquier enlace que termine exactamente en #casos-y-procedimientos
-    const procedimientosLink = document.querySelector('a[href*="#casos-y-procedimientos"]');
-
-    if (procedimientosLink) {
-
-        procedimientosLink.addEventListener('click', function (e) {
-
+    document.querySelectorAll('a[href*="#casos-y-procedimientos"]').forEach(link => {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
-
-            const targetElement = document.getElementById("casos-y-procedimientos");
-
-            if (!targetElement) return;
-
-            if (menu && menu.classList.contains('abierto')) {
-
-                menu.classList.remove('abierto');
-
-                // Esperar exactamente lo que dura la transición
-                setTimeout(() => {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }, 320); // un poco más que 0.3s
-
-            } else {
-
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-
+            const target = document.getElementById("casos-y-procedimientos");
+            if (target) {
+                target.scrollIntoView({ behavior: "smooth" });
             }
-
         });
-
-    }
+    });
 
     // === 6. IDIOMAS (Configuración de rutas) ===
     const linksByLanguage = {

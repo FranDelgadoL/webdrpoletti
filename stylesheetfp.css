@@ -13,14 +13,13 @@
 
 html,
 body {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     font-family: 'Philosopher', Arial, sans-serif;
     overflow-x: hidden;
-    /* Mantiene el scroll horizontal a raya */
 }
 
 /* Estilos de enlaces globales */
