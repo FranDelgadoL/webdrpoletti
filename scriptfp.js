@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     function loadTranslations(language) {
-        fetch('translations.json')
+        fetch('/translations.json')
             .then(response => {
                 if (!response.ok) throw new Error("No se encontró translations.json");
                 return response.json();
