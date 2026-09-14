@@ -1307,3 +1307,90 @@ footer a:hover {
 .text-info.text-left a {
     font-size: 16px !important;
 }
+
+/* =========================================================
+TELEMEDICINA
+========================================================= */
+
+.telemedicina-section {
+    padding: 65px 20px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.telemedicina-container {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.telemedicina-label {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+.telemedicina-container h2 {
+    margin: 0 0 22px;
+    font-family: 'Philosopher', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.telemedicina-container p {
+    max-width: 670px;
+    margin: 0 auto 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.telemedicina-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 13px 25px;
+    background: #333;
+    color: #fff !important;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.telemedicina-button:hover {
+    background: #555;
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+
+    ``` .telemedicina-section {
+        padding: 50px 20px;
+    }
+
+    .telemedicina-container h2 {
+        font-size: 1.7rem;
+    }
+
+    .telemedicina-container p {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .telemedicina-button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+}
