@@ -40,7 +40,16 @@
         "contact-info": "Atiende en Hospital Ochoa en Marbella",
         "hospiten-phone": "Para citas en Hospital Ochoa: +34 952 86 1400",
         "hospiten-map-text": "Ver Hospital Ochoa en el mapa",
-        "ochoa-map-text": "Ver Hospital Ochoa en el mapa"
+        "ochoa-map-text": "Ver Hospital Ochoa en el mapa",
+        "telemedicine-label": "TELEMEDICINA",
+        "telemedicine-title": "Consulta online con el Dr. Fabián Poletti",
+        "telemedicine-text-1-prefix": "Si no puedes acudir presencialmente, también puedes realizar una ",
+        "telemedicine-text-1-highlight": "consulta online por videollamada",
+        "telemedicine-text-1-suffix": " con el Dr. Fabián Poletti a través de Top Doctors.",
+        "telemedicine-text-2-prefix": "Para solicitar una videoconsulta, accede al perfil del Dr. Fabián Poletti en Top Doctors y haz clic en ",
+        "telemedicine-text-2-highlight": "Telemedicina",
+        "telemedicine-text-2-suffix": ". Desde allí podrás seleccionar la opción de consulta online y seguir los pasos indicados por la plataforma.",
+        "telemedicine-button": "Acceder a Top Doctors"
     },
     "en": {
         "instagram-text": "Link to Instagram",
@@ -83,7 +92,16 @@
         "contact-info": "Available at Hospital Ochoa - Marbella",
         "hospiten-phone": "For appointments at Hospital Ochoa: +34 952 86 1400",
         "hospiten-map-text": "View Hospital Ochoa on the map",
-        "ochoa-map-text": "View Hospital Ochoa on the map"
+        "ochoa-map-text": "View Hospital Ochoa on the map",
+        "telemedicine-label": "TELEMEDICINE",
+        "telemedicine-title": "Online consultation with Dr. Fabián Poletti",
+        "telemedicine-text-1-prefix": "If you are unable to attend in person, you can also have an ",
+        "telemedicine-text-1-highlight": "online video consultation",
+        "telemedicine-text-1-suffix": " with Dr. Fabián Poletti through Top Doctors.",
+        "telemedicine-text-2-prefix": "To request a video consultation, visit Dr. Fabián Poletti's profile on Top Doctors and click on ",
+        "telemedicine-text-2-highlight": "Telemedicine",
+        "telemedicine-text-2-suffix": ". From there, you can select the online consultation option and follow the steps provided by the platform.",
+        "telemedicine-button": "Access Top Doctors"
     },
     "ru": {
         "instagram-text": "Ссылка на Инстаграм",
@@ -126,7 +144,16 @@
         "contact-info": "Он работает в больнице Очоа в Марбелье и в больнице Hospital Ochoa",
         "hospiten-phone": "Для записи в Hospital Ochoa: +34 952 86 1400",
         "hospiten-map-text": "Посмотреть Hospital Ochoa на карте",
-        "ochoa-map-text": "Посмотреть больницу Очоа на карте"
+        "ochoa-map-text": "Посмотреть больницу Очоа на карте",
+        "telemedicine-label": "ТЕЛЕМЕДИЦИНА",
+        "telemedicine-title": "Онлайн-консультация с доктором Фабианом Полетти",
+        "telemedicine-text-1-prefix": "Если вы не можете посетить врача лично, вы также можете пройти ",
+        "telemedicine-text-1-highlight": "онлайн-видеоконсультацию",
+        "telemedicine-text-1-suffix": " с доктором Фабианом Полетти через платформу Top Doctors.",
+        "telemedicine-text-2-prefix": "Чтобы записаться на видеоконсультацию, перейдите в профиль доктора Фабиана Полетти на Top Doctors и нажмите ",
+        "telemedicine-text-2-highlight": "«Телемедицина»",
+        "telemedicine-text-2-suffix": ". Затем выберите онлайн-консультацию и следуйте инструкциям платформы.",
+        "telemedicine-button": "Перейти на Top Doctors"
     },
     "it": {
         "instagram-text": "Collegamento a Instagram",
@@ -169,6 +196,15 @@
         "contact-info": "Lavora all'Ospedale Ochoa di Marbella",
         "hospiten-phone": "Per appuntamenti presso Hospital Ochoa: +34 952 86 1400",
         "hospiten-map-text": "Visualizza Hospital Ochoa sulla mappa",
-        "ochoa-map-text": "Visualizza Ochoa Hospital Marbella sulla mappa"
+        "ochoa-map-text": "Visualizza Ochoa Hospital Marbella sulla mappa",
+        "telemedicine-label": "TELEMEDICINA",
+        "telemedicine-title": "Consulto online con il Dr. Fabián Poletti",
+        "telemedicine-text-1-prefix": "Se non puoi recarti personalmente in studio, puoi anche effettuare un ",
+        "telemedicine-text-1-highlight": "consulto online in videochiamata",
+        "telemedicine-text-1-suffix": " con il Dr. Fabián Poletti tramite Top Doctors.",
+        "telemedicine-text-2-prefix": "Per richiedere un videoconsulto, accedi al profilo del Dr. Fabián Poletti su Top Doctors e clicca su ",
+        "telemedicine-text-2-highlight": "Telemedicina",
+        "telemedicine-text-2-suffix": ". Da lì potrai selezionare l'opzione di consulto online e seguire i passaggi indicati dalla piattaforma.",
+        "telemedicine-button": "Accedi a Top Doctors"
     }
 }

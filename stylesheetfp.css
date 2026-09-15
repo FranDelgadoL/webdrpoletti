@@ -577,8 +577,8 @@ ul.dropdown-content .nav-item:hover {
 }
 
 .cases-container {
-    max-width: 1268.8px;
-
+    width: 100%;
+    max-width: none;
 }
 
 .section-title {
@@ -1375,7 +1375,7 @@ TELEMEDICINA
 
 @media (max-width: 600px) {
 
-    ``` .telemedicina-section {
+    .telemedicina-section {
         padding: 50px 20px;
     }
 
