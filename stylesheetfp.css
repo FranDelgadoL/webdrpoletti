@@ -1330,7 +1330,7 @@ TELEMEDICINA
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 2px;
-    color: #777;
+    color: #06026B;
 }
 
 .telemedicina-container h2 {
@@ -1338,7 +1338,7 @@ TELEMEDICINA
     font-family: 'Philosopher', serif;
     font-size: 2rem;
     font-weight: 400;
-    color: #333;
+    color: #06026B;
 }
 
 .telemedicina-container p {
@@ -1393,4 +1393,48 @@ TELEMEDICINA
         max-width: 300px;
     }
 
+}
+
+.videos-section {
+    width: 100%;
+    padding: 55px 20px;
+    box-sizing: border-box;
+}
+
+.videos-container {
+    width: 100%;
+    max-width: 1268.8px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.videos-label {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #06026B;
+}
+
+.videos-container h2 {
+    margin-bottom: 10px;
+    color: #06026B;
+}
+
+.videos-description {
+    margin-bottom: 25px;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.video-vertical {
+    display: block;
+    width: min(100%, 280px);
+    height: auto;
+    max-height: 498px;
+    border-radius: 8px;
 }
